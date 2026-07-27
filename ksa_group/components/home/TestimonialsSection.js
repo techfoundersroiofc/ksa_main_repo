@@ -1,12 +1,12 @@
 import SectionHeader from "@/components/ui/SectionHeader";
 import { TESTIMONIALS } from "@/lib/data/testimonials";
 import { Star, Quote } from "lucide-react";
+import Image from "next/image";
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-20 sm:py-28 bg-[#F8FAFC] relative">
+    <section className="py-20 sm:py-28 bg-surface-alt relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <SectionHeader
           badge="Voices of Success"
           title="What Our Alumni & Parents"
@@ -22,13 +22,13 @@ export default function TestimonialsSection() {
             >
               <div className="space-y-4">
                 {/* Rating Stars */}
-                <div className="flex items-center gap-1 text-[#D4AF37]">
+                <div className="flex items-center gap-1 text-accent-gold">
                   {[...Array(tm.rating)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
                 </div>
 
-                <Quote className="w-8 h-8 text-[#D4AF37]/30" />
+                <Quote className="w-8 h-8 text-accent-gold/30" />
 
                 <p className="text-slate-700 text-sm leading-relaxed italic">
                   &ldquo;{tm.quote}&rdquo;
@@ -36,10 +36,12 @@ export default function TestimonialsSection() {
               </div>
 
               <div className="pt-6 border-t border-slate-100 flex items-center gap-4 mt-6">
-                <img
+                <Image
                   src={tm.avatar}
                   alt={tm.name}
-                  className="w-12 h-12 rounded-full object-cover border-2 border-[#D4AF37]"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full object-cover border-2 border-accent-gold"
                 />
                 <div>
                   <h4 className="font-bold text-[#0A192F] text-base font-heading">
@@ -48,7 +50,7 @@ export default function TestimonialsSection() {
                   <span className="text-xs text-slate-500 block">
                     {tm.role}
                   </span>
-                  <span className="text-[11px] font-semibold text-[#D4AF37]">
+                  <span className="text-[11px] font-semibold text-accent-gold">
                     {tm.college} • {tm.program}
                   </span>
                 </div>
@@ -56,7 +58,6 @@ export default function TestimonialsSection() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

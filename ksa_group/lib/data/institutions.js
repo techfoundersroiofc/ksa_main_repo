@@ -33,8 +33,7 @@ export const INSTITUTIONS = [
       designation: "Principal & Dean",
       message:
         "Nursing is the backbone of modern healthcare. At Kamarajar College of Nursing, we combine rigorous academic theory with real-world bedside expertise to train international-standard nursing professionals.",
-      avatar:
-        "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400",
+      avatar: "/college/1.jpg",
     },
     programs: [
       {
@@ -89,8 +88,7 @@ export const INSTITUTIONS = [
       designation: "Principal & Director of Research",
       message:
         "The pharmaceutical sector is crucial to global health security. We empower our students with cutting-edge analytical tools, industrial exposure, and ethical research values to innovate life-saving therapeutics.",
-      avatar:
-        "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400",
+      avatar: "/college/Our-Nursing-Students-768x466.webp",
     },
     programs: [
       {
@@ -145,8 +143,7 @@ export const INSTITUTIONS = [
       designation: "Principal & Director of Maritime Studies",
       message:
         "A career in maritime transportation offers unmatched adventure, leadership opportunities, and global financial rewards. We instill rock-solid nautical discipline and modern navigation skills in every cadet.",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+      avatar: "/college/0M5A7948.JPG",
     },
     programs: [
       {
