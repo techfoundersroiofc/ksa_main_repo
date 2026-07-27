@@ -217,14 +217,14 @@ export default function HeroSection({ onOpenApplyModal }) {
         <button
           onClick={prevSlide}
           aria-label="Previous Hero Slide"
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-[#0A192F]/60 border border-accent-gold/30 text-white hover:bg-[#D4AF37] hover:text-[#0A192F] transition-all cursor-pointer shadow-xl hidden sm:flex items-center justify-center"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-[#0A192F]/60 border border-accent-gold/30 text-white hover:bg-accent-gold hover:text-[#0A192F] transition-all cursor-pointer shadow-xl hidden sm:flex items-center justify-center"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
         <button
           onClick={nextSlide}
           aria-label="Next Hero Slide"
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-[#0A192F]/60 border border-[#D4AF37]/30 text-white hover:bg-[#D4AF37] hover:text-[#0A192F] transition-all cursor-pointer shadow-xl hidden sm:flex items-center justify-center"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-[#0A192F]/60 border border-accent-gold/30 text-white hover:bg-accent-gold hover:text-[#0A192F] transition-all cursor-pointer shadow-xl hidden sm:flex items-center justify-center"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
@@ -238,7 +238,7 @@ export default function HeroSection({ onOpenApplyModal }) {
               aria-label={`Go to slide ${idx + 1}`}
               className={`h-2.5 rounded-full transition-all cursor-pointer ${
                 idx === currentSlide
-                  ? "w-8 bg-[#D4AF37]"
+                  ? "w-8 bg-accent-gold"
                   : "w-2.5 bg-white/40 hover:bg-white/70"
               }`}
             />
@@ -247,7 +247,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       </div>
 
       {/* 3. QUICK PROGRAM FINDER BAR OVERLAY ("YOUR FUTURE BEGINS AT KSA") */}
-      <div className="relative z-30  border-t-2 border-[#D4AF37] shadow-2xl">
+      <div className="relative z-30  border-t-2 border-accent-gold shadow-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <form
             onSubmit={handleExploreSearch}
@@ -255,9 +255,9 @@ export default function HeroSection({ onOpenApplyModal }) {
           >
             {/* Left Block: "YOUR FUTURE BEGINS AT KSA" */}
             <div className=" py-4 px-6 lg:py-6 border-b lg:border-b-0 lg:border-r border-slate-800 flex items-center gap-3 shrink-0">
-              <div className="w-3 h-8 bg-[#D4AF37] rounded-sm hidden sm:block" />
+              <div className="w-3 h-8 bg-accent-gold rounded-sm hidden sm:block" />
               <div>
-                <span className="text-[10px] uppercase font-bold text-[#D4AF37] tracking-widest block">
+                <span className="text-[10px] uppercase font-bold text-accent-gold tracking-widest block">
                   Interactive Course Finder
                 </span>
                 <h3 className="font-heading font-extrabold text-base sm:text-lg text-white uppercase tracking-tight">
@@ -279,7 +279,7 @@ export default function HeroSection({ onOpenApplyModal }) {
                     setSelectedInstitution(e.target.value);
                     setSelectedProgram("all");
                   }}
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm focus:border-[#D4AF37] focus:outline-none"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm focus:border-accent-gold focus:outline-none"
                 >
                   <option value="all">All Constituent Colleges</option>
                   {INSTITUTIONS.map((inst) => (
@@ -298,7 +298,7 @@ export default function HeroSection({ onOpenApplyModal }) {
                 <select
                   value={selectedProgram}
                   onChange={(e) => setSelectedProgram(e.target.value)}
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm focus:border-[#D4AF37] focus:outline-none"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm focus:border-accent-gold focus:outline-none"
                 >
                   <option value="all">All Courses / Programs</option>
                   {(selectedInstitution === "all"
@@ -319,7 +319,7 @@ export default function HeroSection({ onOpenApplyModal }) {
             <div className="p-4 lg:py-0 lg:pl-0 shrink-0">
               <button
                 type="submit"
-                className="w-full lg:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#B8902A] text-[#0A192F] font-extrabold text-sm uppercase tracking-wider shadow-lg hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full lg:w-auto px-8 py-3.5 rounded-xl bg-linear-to-r from-[#D4AF37] via-[#E5C158] to-[#B8902A] text-[#0A192F] font-extrabold text-sm uppercase tracking-wider shadow-lg hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>EXPLORE</span>
                 <ArrowRight className="w-4 h-4 text-[#0A192F]" />
@@ -332,7 +332,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       {/* 4. STICKY SIDE ADMISSION ENQUIRY TAB (Right edge float like Sathyabama format) */}
       <button
         onClick={onOpenApplyModal}
-        className="fixed right-0 top-1/2 -translate-y-1/2 z-40 bg-gradient-to-b from-[#D4AF37] to-[#B8902A] text-[#0A192F] font-extrabold text-xs tracking-wider uppercase py-4 px-2.5 rounded-l-2xl shadow-2xl hover:scale-105 transition-all cursor-pointer flex flex-col items-center gap-2 border-l border-t border-b border-[#0A192F]/30"
+        className="fixed right-0 top-1/2 -translate-y-1/2 z-40 bg-linear-to-b from-[#D4AF37] to-[#B8902A] text-[#0A192F] font-extrabold text-xs tracking-wider uppercase py-4 px-2.5 rounded-l-2xl shadow-2xl hover:scale-105 transition-all cursor-pointer flex flex-col items-center gap-2 border-l border-t border-b border-[#0A192F]/30"
         style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
       >
         <div className="flex items-center gap-1">
