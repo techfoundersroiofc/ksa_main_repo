@@ -10,13 +10,12 @@ export default function PlacementsSection() {
     { name: "Fortis Healthcare", category: "Nursing & ICU" },
     { name: "Cipla Laboratories", category: "Pharmaceuticals" },
     { name: "UK NHS Trust", category: "International Healthcare" },
-    { name: "Synergy Marine Group", category: "Ship Management" }
+    { name: "Synergy Marine Group", category: "Ship Management" },
   ];
 
   return (
     <section className="py-20 sm:py-28 bg-[#0A192F] text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <SectionHeader
           badge="Global Career Outcomes"
           title="Industry Partners &"
@@ -28,7 +27,7 @@ export default function PlacementsSection() {
         {/* Highlight Stats Row */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
           <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 text-center">
-            <span className="text-3xl sm:text-4xl font-extrabold text-[#D4AF37] font-heading block mb-1">
+            <span className="text-3xl sm:text-4xl font-extrabold text-accent-gold font-heading block mb-1">
               98%
             </span>
             <span className="text-xs uppercase font-bold text-slate-300 tracking-wider">
@@ -37,7 +36,7 @@ export default function PlacementsSection() {
           </div>
 
           <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 text-center">
-            <span className="text-3xl sm:text-4xl font-extrabold text-[#D4AF37] font-heading block mb-1">
+            <span className="text-3xl sm:text-4xl font-extrabold text-accent-gold font-heading block mb-1">
               ₹14.5 LPA
             </span>
             <span className="text-xs uppercase font-bold text-slate-300 tracking-wider">
@@ -46,7 +45,7 @@ export default function PlacementsSection() {
           </div>
 
           <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 text-center">
-            <span className="text-3xl sm:text-4xl font-extrabold text-[#D4AF37] font-heading block mb-1">
+            <span className="text-3xl sm:text-4xl font-extrabold text-accent-gold font-heading block mb-1">
               45+
             </span>
             <span className="text-xs uppercase font-bold text-slate-300 tracking-wider">
@@ -60,9 +59,9 @@ export default function PlacementsSection() {
           {recruiters.map((rec, i) => (
             <div
               key={i}
-              className="p-5 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-[#D4AF37]/50 text-center transition-all flex flex-col justify-center items-center group"
+              className="p-5 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-accent-gold/50 text-center transition-all flex flex-col justify-center items-center group"
             >
-              <span className="text-base font-bold text-white group-hover:text-[#D4AF37] transition-colors font-heading">
+              <span className="text-base font-bold text-white group-hover:text-accent-gold transition-colors font-heading">
                 {rec.name}
               </span>
               <span className="text-[11px] text-slate-400 mt-1">
@@ -71,7 +70,6 @@ export default function PlacementsSection() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
