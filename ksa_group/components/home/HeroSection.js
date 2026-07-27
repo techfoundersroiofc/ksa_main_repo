@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { INSTITUTIONS } from "@/lib/data/institutions";
 import { ALL_PROGRAMS } from "@/lib/data/programs";
+import Image from "next/image";
 
 export default function HeroSection({ onOpenApplyModal }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -29,8 +30,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       highlight: "DIGITAL HEADQUARTERS",
       subtitle:
         "Governing Premier Accredited Colleges in Healthcare, Pharmacy & Maritime Nautical Sciences.",
-      bgImage:
-        "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&q=80&w=2000",
+      bgImage: "/college/1.JPG",
       badge: "INC • PCI • AICTE • DGS A1 RATED",
       stat: "98% Global Placements",
     },
@@ -41,8 +41,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       highlight: "NAUTICAL EXCELLENCE",
       subtitle:
         "Featuring 360° Full-Mission Bridge Simulator, Heavy Engine Workshop & DGS Grade A1 Rating.",
-      bgImage:
-        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=2000",
+      bgImage: "/college/2.JPG",
       badge: "APPROVED BY DGS & IMU AFFILIATED",
       stat: "100% Sailing Sponsorship",
     },
@@ -53,8 +52,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       highlight: "CLINICAL MASTERY",
       subtitle:
         "High-Fidelity Simulation ICUs, Advanced HPLC R&D Cleanrooms & UK NHS Placement Pathways.",
-      bgImage:
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2000",
+      bgImage: "/college/3.JPG",
       badge: "INC, TNNC & PCI APPROVED",
       stat: "1,200+ Clinical Bed Tie-ups",
     },
@@ -104,20 +102,20 @@ export default function HeroSection({ onOpenApplyModal }) {
   return (
     <div className="relative w-full overflow-hidden bg-[#0A192F]">
       {/* 1. NEWS UPDATE TICKER BAR (Top Bar like Sathyabama format) */}
-      <div className="bg-white border-b border-[#D4AF37]/30 text-black text-xs py-2 px-4 flex items-center relative z-20">
+      <div className="border-b border-accent-gold/30 text-white text-xs py-2 px-4 flex items-center relative z-20">
         <div className="max-w-7xl mx-auto w-full flex flex-col sm:flex-row items-center gap-3">
-          <div className="bg-[#D4AF37] text-[#0A192F] px-3 py-1 font-extrabold uppercase tracking-wider text-[11px] flex items-center gap-1.5 shrink-0 rounded-sm">
+          <div className="bg-accent-gold text-[#0A192F] px-3 py-1 font-extrabold uppercase tracking-wider text-[11px] flex items-center gap-1.5 shrink-0 rounded-sm">
             <Bell className="w-3.5 h-3.5 animate-bounce" />
             <span>NEWS UPDATE</span>
           </div>
 
-          <div className="flex-1 overflow-hidden h-5 flex items-center text-slate-200">
+          <div className="flex-1 flex items-center justify-center overflow-hidden h-5 text-white">
             <p className="truncate font-medium text-xs sm:text-sm animate-fadeIn">
               {newsTicker[tickerIndex]}
             </p>
           </div>
 
-          <div className="hidden lg:flex items-center gap-4 text-[11px] text-[#D4AF37] shrink-0 font-bold">
+          <div className="hidden lg:flex items-center gap-4 text-[12px] text-accent-gold shrink-0 font-bold">
             <button
               onClick={onOpenApplyModal}
               className="hover:underline cursor-pointer"
@@ -129,7 +127,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       </div>
 
       {/* 2. HERO CAROUSEL SLIDER BANNERS */}
-      <div className="relative h-[520px] sm:h-[580px] lg:h-[640px] w-full overflow-hidden">
+      <div className="relative h-130 sm:h-145 lg:h-160 xl:h-250 w-full overflow-hidden">
         {slides.map((slide, idx) => {
           const isActive = idx === currentSlide;
           return (
@@ -142,19 +140,22 @@ export default function HeroSection({ onOpenApplyModal }) {
               }`}
             >
               {/* Image & Dark Gradient Overlay */}
-              <img
+              <Image
                 src={slide.bgImage}
                 alt={slide.title}
-                className="w-full h-full object-cover scale-105 transition-transform duration-[10000ms]"
+                unoptimized
+                width={1920}
+                height={1080}
+                className="w-full h-full object-cover scale-105 transition-transform duration-10000"
               />
               <div className="absolute inset-0 " />
-              <div className="absolute inset-0 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px] opacity-15" />
+              <div className="absolute inset-0 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] bg-size-[24px_24px] opacity-15" />
 
               {/* Content Overlay */}
               <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center relative z-20">
                 <div className="max-w-3xl space-y-4 sm:space-y-6 pt-4">
                   {/* Top Category Badge */}
-                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#D4AF37]/50 text-[#D4AF37] text-xs font-extrabold uppercase tracking-widest backdrop-blur-md">
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-gold/50 text-accent-gold text-xs font-extrabold uppercase tracking-widest backdrop-blur-md">
                     <Sparkles className="w-4 h-4" />
                     <span>{slide.tag}</span>
                   </div>
@@ -175,11 +176,11 @@ export default function HeroSection({ onOpenApplyModal }) {
                   {/* Badges & Stats */}
                   <div className="flex flex-wrap items-center gap-4 pt-2">
                     <span className="px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-slate-700 text-xs font-bold text-slate-200 flex items-center gap-2">
-                      <ShieldCheck className="w-4 h-4 text-[#D4AF37]" />
+                      <ShieldCheck className="w-4 h-4 text-accent-gold" />
                       {slide.badge}
                     </span>
-                    <span className="px-3.5 py-1.5 rounded-xl bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-xs font-extrabold text-[#D4AF37] flex items-center gap-2">
-                      <Award className="w-4 h-4 text-[#D4AF37]" />
+                    <span className="px-3.5 py-1.5 rounded-xl bg-accent-gold/15 border border-accent-gold/40 text-xs font-extrabold text-accent-gold flex items-center gap-2">
+                      <Award className="w-4 h-4 text-accent-gold" />
                       {slide.stat}
                     </span>
                   </div>
@@ -188,7 +189,7 @@ export default function HeroSection({ onOpenApplyModal }) {
                   <div className="flex flex-wrap items-center gap-4 pt-4">
                     <button
                       onClick={onOpenApplyModal}
-                      className="px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#B8902A] text-[#0A192F] font-extrabold text-sm sm:text-base shadow-2xl hover:brightness-110 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
+                      className="px-7 py-3.5 rounded-xl bg-linear-to-r from-[#D4AF37] via-[#E5C158] to-[#B8902A] text-[#0A192F] font-extrabold text-sm sm:text-base shadow-2xl hover:brightness-110 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
                     >
                       <span>Apply Online 2026</span>
                       <ArrowRight className="w-5 h-5" />
@@ -211,7 +212,7 @@ export default function HeroSection({ onOpenApplyModal }) {
         <button
           onClick={prevSlide}
           aria-label="Previous Hero Slide"
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-[#0A192F]/60 border border-[#D4AF37]/30 text-white hover:bg-[#D4AF37] hover:text-[#0A192F] transition-all cursor-pointer shadow-xl hidden sm:flex items-center justify-center"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-[#0A192F]/60 border border-accent-gold/30 text-white hover:bg-[#D4AF37] hover:text-[#0A192F] transition-all cursor-pointer shadow-xl hidden sm:flex items-center justify-center"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
