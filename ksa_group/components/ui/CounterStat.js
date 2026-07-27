@@ -1,40 +1,45 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
-export default function CounterStat({ value, label, subtitle, icon: Icon, dark = false }) {
+export default function CounterStat({
+  value,
+  label,
+  subtitle,
+  icon: Icon,
+  dark = false,
+}) {
   return (
     <div
-      className={`p-6 sm:p-8 rounded-3xl transition-all duration-300 ${
+      className={`h-full p-4 rounded-2xl sm:rounded-3xl transition-all duration-300 hover:-translate-y-1 shadow-md ${
         dark
-          ? "bg-slate-900/80 border border-slate-800 text-white hover:border-[#D4AF37]/50"
-          : "bg-white border border-slate-200/80 text-[#0A192F] shadow-lg hover:shadow-xl"
+          ? "bg-slate-900/80 border border-slate-800 text-white hover:border-gold/40 shadow-xl"
+          : "bg-white border border-slate-200/80 text-primary hover:border-gold/30 hover:shadow-xl"
       }`}
     >
-      <div className="flex items-center gap-4 mb-4">
-        {Icon && (
-          <div
-            className={`p-3 rounded-2xl ${
-              dark
-                ? "bg-[#D4AF37]/10 text-[#D4AF37] border border-[#D4AF37]/30"
-                : "bg-[#0A192F] text-[#D4AF37]"
-            }`}
-          >
-            <Icon className="w-6 h-6" />
-          </div>
-        )}
+      <div className="flex items-center justify-between gap-2 mb-4">
         <span
-          className={`font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight ${
-            dark ? "text-gradient-gold" : "text-[#0A192F]"
+          className={`font-heading font-semibold text-xl sm:text-3xl tracking-tight leading-none ${
+            dark ? "text-gradient-gold" : "text-primary"
           }`}
         >
           {value}
         </span>
+
+        {Icon && (
+          <div
+            className={`p-2.5 sm:p-3 rounded-2xl shrink-0 ${
+              dark
+                ? "bg-gold/10 text-gold border border-gold/30"
+                : "bg-primary text-gold"
+            }`}
+          >
+            <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
+          </div>
+        )}
       </div>
 
       <h4
-        className={`font-bold text-base sm:text-lg mb-1 ${
-          dark ? "text-white" : "text-[#0A192F]"
+        className={`font-bold text-sm sm:text-base mb-1.5 leading-snug ${
+          dark ? "text-white" : "text-primary"
         }`}
       >
         {label}
@@ -42,7 +47,7 @@ export default function CounterStat({ value, label, subtitle, icon: Icon, dark =
 
       {subtitle && (
         <p
-          className={`text-xs ${
+          className={`text-xs sm:text-sm leading-relaxed ${
             dark ? "text-slate-400" : "text-slate-500"
           }`}
         >
