@@ -4,7 +4,7 @@ export const INSTITUTIONS = [
     slug: "kamarajar-college-of-nursing",
     name: "Kamarajar College of Nursing",
     shortName: "KCN",
-    category: "Healthcare & Allied Sciences",
+    category: "Nursing",
     tagline:
       "Empowering Compassionate Healthcare Leaders & Clinical Specialists",
     established: 2004,
@@ -13,8 +13,7 @@ export const INSTITUTIONS = [
       "Indian Nursing Council (INC) & TNNC Approved | Grade 'A' Accredited",
     description:
       "Kamarajar College of Nursing is a premier healthcare education institution dedicated to nurturing clinical excellence, empathetic patient care, and cutting-edge medical research. Equipped with multi-specialty simulation labs and tie-ups with top super-specialty hospitals.",
-    heroImage:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1600",
+    heroImage: "/college/1.JPG",
     campusImage:
       "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200",
     stats: [
@@ -61,7 +60,7 @@ export const INSTITUTIONS = [
     slug: "kamarajar-college-of-pharmacy",
     name: "Kamarajar College of Pharmacy",
     shortName: "KCP",
-    category: "Pharmaceutical Sciences",
+    category: "Pharmacy",
     tagline:
       "Advancing Pharmaceutical Innovation, Drug Discovery & Clinical Excellence",
     established: 2006,
@@ -70,8 +69,7 @@ export const INSTITUTIONS = [
       "Pharmacy Council of India (PCI) & AICTE Approved | NIRF Ranked",
     description:
       "Kamarajar College of Pharmacy stands at the forefront of pharmaceutical education, research, and industrial formulation. With advanced instrumentation labs, pilot scale plant facilities, and active industry collaborations, we shape world-class pharmacists and drug researchers.",
-    heroImage:
-      "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=1600",
+    heroImage: "/college/Our-Nursing-Students-768x466.webp",
     campusImage:
       "https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?auto=format&fit=crop&q=80&w=1200",
     stats: [
@@ -117,8 +115,8 @@ export const INSTITUTIONS = [
     id: "maritime",
     slug: "kamarajar-college-of-maritime",
     name: "Kamarajar College of Maritime",
-    shortName: "KCM",
-    category: "Maritime & Nautical Sciences",
+    shortName: "PKIMSE",
+    category: "Maritime",
     tagline:
       "Navigating Global Horizons with Elite Merchant Navy Training & Engineering",
     established: 2008,
@@ -127,8 +125,7 @@ export const INSTITUTIONS = [
       "Directorate General of Shipping (DGS) Approved | Grade 'A1' Outstanding Rating",
     description:
       "Kamarajar College of Maritime is an elite merchant navy academy featuring a full-mission Ship Simulator, real engine workshop, swimming pool for sea survival, and a residential naval cadet lifestyle. Preparing officers and marine engineers for international shipping fleets.",
-    heroImage:
-      "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1600",
+    heroImage: "/college/2.JPG",
     campusImage:
       "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=1200",
     stats: [
@@ -185,7 +182,7 @@ export const INSTITUTIONS = [
 
 export const INSTITUTION_CATEGORIES = [
   "All Institutions",
-  "Healthcare & Allied Sciences",
-  "Pharmaceutical Sciences",
-  "Maritime & Nautical Sciences",
+  "Nursing",
+  "Pharmacy",
+  "Maritime",
 ];
