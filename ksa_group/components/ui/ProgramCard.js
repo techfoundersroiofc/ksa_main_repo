@@ -10,9 +10,11 @@ export default function ProgramCard({ program, onOpenApplyModal }) {
           <span className="px-3 py-1 rounded-full bg-[#0A192F]/5 text-[#0A192F] text-xs font-bold uppercase tracking-wider">
             {program.level}
           </span>
-          <span className="text-xs font-semibold text-[#D4AF37] flex items-center gap-1">
-            <Clock className="w-3.5 h-3.5" /> {program.duration}
-          </span>
+          {program.duration && (
+            <span className="text-xs font-semibold text-[#D4AF37] flex items-center gap-1">
+              <Clock className="w-3.5 h-3.5" /> {program.duration}
+            </span>
+          )}
         </div>
 
         {/* Program Title & College */}
