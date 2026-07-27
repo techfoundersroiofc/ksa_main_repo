@@ -11,7 +11,7 @@ export default function ProgramCard({ program, onOpenApplyModal }) {
             {program.level}
           </span>
           {program.duration && (
-            <span className="text-xs font-semibold text-[#D4AF37] flex items-center gap-1">
+            <span className="text-xs font-semibold text-accent-gold flex items-center gap-1">
               <Clock className="w-3.5 h-3.5" /> {program.duration}
             </span>
           )}
@@ -21,26 +21,26 @@ export default function ProgramCard({ program, onOpenApplyModal }) {
         <h3 className="text-xl font-bold text-[#0A192F] font-heading leading-snug mb-1">
           {program.title}
         </h3>
-        <p className="text-xs font-medium text-slate-500 mb-4">
+        <p className="text-xs font-medium text-black mb-4">
           {program.collegeName}
         </p>
 
-        <p className="text-sm text-slate-600 leading-relaxed mb-4">
+        <p className="text-sm text-black leading-relaxed mb-4">
           {program.overview}
         </p>
 
         {/* Eligibility Preview */}
-        <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-700 mb-4">
+        <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-black mb-4">
           <strong className="text-slate-900 block mb-0.5">Eligibility:</strong>
           <span>{program.eligibility}</span>
         </div>
 
         {/* Highlights */}
         {program.highlights && (
-          <ul className="space-y-1.5 text-xs text-slate-600 mb-6">
+          <ul className="space-y-1.5 text-xs text-black mb-6">
             {program.highlights.map((hl, i) => (
               <li key={i} className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-accent-gold" />
                 <span>{hl}</span>
               </li>
             ))}
@@ -58,7 +58,7 @@ export default function ProgramCard({ program, onOpenApplyModal }) {
         </Link>
         <button
           onClick={onOpenApplyModal}
-          className="py-2.5 px-3 rounded-xl bg-[#0A192F] hover:bg-[#162C4E] text-[#D4AF37] font-bold text-xs text-center transition-colors cursor-pointer"
+          className="py-2.5 px-3 rounded-xl bg-[#0A192F] hover:bg-primary-navy-light text-accent-gold font-bold text-xs text-center transition-colors cursor-pointer"
         >
           Apply Now
         </button>
