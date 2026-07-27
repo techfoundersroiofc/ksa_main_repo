@@ -19,9 +19,8 @@ export default function AcademicExcellence({ onOpenApplyModal }) {
       : ALL_PROGRAMS.filter((p) => p.category === activeTab);
 
   return (
-    <section className="py-20 sm:py-28 bg-[#F8FAFC] relative">
+    <section className="py-20 sm:py-28 bg-surface-alt relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <SectionHeader
           badge="Academic Degree Catalog"
           title="World-Class Industry-Aligned"
@@ -38,8 +37,8 @@ export default function AcademicExcellence({ onOpenApplyModal }) {
               className={cn(
                 "px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer",
                 activeTab === cat
-                  ? "bg-[#0A192F] text-[#D4AF37] shadow-lg"
-                  : "bg-white text-slate-600 hover:bg-slate-200 border border-slate-200"
+                  ? "bg-[#0A192F] text-accent-gold shadow-lg"
+                  : "bg-white text-slate-600 hover:bg-slate-200 border border-slate-200",
               )}
             >
               {cat} Programs
@@ -62,13 +61,12 @@ export default function AcademicExcellence({ onOpenApplyModal }) {
         <div className="text-center">
           <Link
             href="/academics"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[#0A192F] text-[#D4AF37] font-bold text-sm hover:bg-[#162C4E] transition-colors shadow-md"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[#0A192F] text-accent-gold font-bold text-sm hover:bg-primary-navy-light transition-colors shadow-md"
           >
             <span>View Full Curriculum & Syllabus</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
-
       </div>
     </section>
   );
