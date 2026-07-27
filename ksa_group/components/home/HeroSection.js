@@ -20,7 +20,7 @@ import Image from "next/image";
 export default function HeroSection({ onOpenApplyModal }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedInstitution, setSelectedInstitution] = useState("all");
-  const [selectedLevel, setSelectedLevel] = useState("all");
+  const [selectedProgram, setSelectedProgram] = useState("all");
 
   const slides = [
     {
@@ -92,7 +92,12 @@ export default function HeroSection({ onOpenApplyModal }) {
 
   const handleExploreSearch = (e) => {
     e.preventDefault();
-    if (selectedInstitution !== "all") {
+    if (selectedProgram !== "all") {
+      const prog = ALL_PROGRAMS.find((p) => p.id === selectedProgram);
+      if (prog) {
+        window.location.href = `/institutions/${prog.collegeId}#${selectedProgram}`;
+      }
+    } else if (selectedInstitution !== "all") {
       window.location.href = `/institutions/${selectedInstitution}`;
     } else {
       window.location.href = "/academics";
@@ -270,7 +275,10 @@ export default function HeroSection({ onOpenApplyModal }) {
                 </label>
                 <select
                   value={selectedInstitution}
-                  onChange={(e) => setSelectedInstitution(e.target.value)}
+                  onChange={(e) => {
+                    setSelectedInstitution(e.target.value);
+                    setSelectedProgram("all");
+                  }}
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm focus:border-[#D4AF37] focus:outline-none"
                 >
                   <option value="all">All Constituent Colleges</option>
@@ -282,23 +290,27 @@ export default function HeroSection({ onOpenApplyModal }) {
                 </select>
               </div>
 
-              {/* Program Level Selector */}
+              {/* Course Selector */}
               <div>
                 <label className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">
-                  Program Level
+                  Course / Program
                 </label>
                 <select
-                  value={selectedLevel}
-                  onChange={(e) => setSelectedLevel(e.target.value)}
+                  value={selectedProgram}
+                  onChange={(e) => setSelectedProgram(e.target.value)}
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm focus:border-[#D4AF37] focus:outline-none"
                 >
-                  <option value="all">All Degree Levels</option>
-                  <option value="Undergraduate">Undergraduate (UG)</option>
-                  <option value="Postgraduate">Postgraduate (PG)</option>
-                  <option value="Doctoral / Professional">
-                    Doctoral / Pharm.D
-                  </option>
-                  <option value="Diploma">Diploma & Certificates</option>
+                  <option value="all">All Courses / Programs</option>
+                  {(selectedInstitution === "all"
+                    ? ALL_PROGRAMS
+                    : ALL_PROGRAMS.filter(
+                        (p) => p.collegeId === selectedInstitution,
+                      )
+                  ).map((prog) => (
+                    <option key={prog.id} value={prog.id}>
+                      {prog.title}
+                    </option>
+                  ))}
                 </select>
               </div>
             </div>
