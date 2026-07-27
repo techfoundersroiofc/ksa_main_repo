@@ -10,19 +10,19 @@ export default function QuickStatsSection() {
       icon: Award,
     },
     {
-      value: "15,000+",
+      value: "10,000+",
       label: "Global Alumni",
       subtitle: "Professionals serving across 30+ countries",
       icon: Users,
     },
     {
-      value: "50+",
+      value: "20+",
       label: "Advanced Labs",
       subtitle: "360° Ship Simulator, ICU Ward, HPLC Pharma R&D",
       icon: ShieldCheck,
     },
     {
-      value: "Grade A1",
+      value: "Top Rated",
       label: "Accreditation & Rating",
       subtitle: "INC, PCI, AICTE & DGS Outstanding Certification",
       icon: Building2,
@@ -31,8 +31,8 @@ export default function QuickStatsSection() {
 
   return (
     <section className="py-12 bg-primary-navy-deep border-y border-accent-gold/20 relative z-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {stats.map((st, i) => (
             <CounterStat key={i} {...st} dark={true} />
           ))}
