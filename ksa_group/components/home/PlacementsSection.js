@@ -37,16 +37,16 @@ export default function PlacementsSection() {
 
           <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 text-center">
             <span className="text-3xl sm:text-4xl font-extrabold text-accent-gold font-heading block mb-1">
-              ₹14.5 LPA
+              35+
             </span>
             <span className="text-xs uppercase font-bold text-slate-300 tracking-wider">
-              Highest Officer / Specialist Package
+              Active Industry MoUs
             </span>
           </div>
 
           <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 text-center">
             <span className="text-3xl sm:text-4xl font-extrabold text-accent-gold font-heading block mb-1">
-              45+
+              50+
             </span>
             <span className="text-xs uppercase font-bold text-slate-300 tracking-wider">
               Annual Corporate Recruiters
@@ -55,21 +55,6 @@ export default function PlacementsSection() {
         </div>
 
         {/* Recruiters Logos Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {recruiters.map((rec, i) => (
-            <div
-              key={i}
-              className="p-5 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-accent-gold/50 text-center transition-all flex flex-col justify-center items-center group"
-            >
-              <span className="text-base font-bold text-white group-hover:text-accent-gold transition-colors font-heading">
-                {rec.name}
-              </span>
-              <span className="text-[11px] text-slate-400 mt-1">
-                {rec.category}
-              </span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

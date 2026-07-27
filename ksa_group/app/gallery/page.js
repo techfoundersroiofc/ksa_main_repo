@@ -3,58 +3,66 @@
 import { useState } from "react";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function GalleryPage() {
   const [selectedFilter, setSelectedFilter] = useState("All");
 
-  const filters = ["All", "Nursing", "Pharmacy", "Maritime", "Graduation", "Campus Life"];
+  const filters = [
+    "All",
+    "Nursing",
+    "Pharmacy",
+    "Maritime",
+    "Graduation",
+    "Campus Life",
+  ];
 
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+      url: "/faclities/5.JPG",
       title: "Clinical ICU Simulation Ward",
-      category: "Nursing"
+      category: "Nursing",
     },
     {
-      url: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=800",
+      url: "/faclities/4.jpg",
       title: "360° Transas Ship Simulator Bridge",
-      category: "Maritime"
+      category: "Maritime",
     },
     {
-      url: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800",
+      url: "/college/3.jpg",
       title: "Pharma Analytical Instrument Suite",
-      category: "Pharmacy"
+      category: "Pharmacy",
     },
     {
-      url: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800",
+      url: "/college/0M5A8803.JPG",
       title: "Annual Degree Convocation Ceremony",
-      category: "Graduation"
+      category: "Graduation",
     },
     {
-      url: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800",
+      url: "/college/k-con-about-us.webp",
       title: "Central Digital Resource Library",
-      category: "Campus Life"
+      category: "Campus Life",
     },
     {
-      url: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&q=80&w=800",
+      url: "/faclities/7.JPG",
       title: "Green Campus Hostels & Sports Ground",
-      category: "Campus Life"
+      category: "Campus Life",
     },
     {
-      url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800",
+      url: "/college/1.JPG",
       title: "Pediatric Clinical Nursing Ward",
-      category: "Nursing"
+      category: "Nursing",
     },
     {
-      url: "https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?auto=format&fit=crop&q=80&w=800",
+      url: "/college/Our-Nursing-Students-768x466.webp",
       title: "Herbal Pharmacognosy Research Lab",
-      category: "Pharmacy"
+      category: "Pharmacy",
     },
     {
-      url: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800",
+      url: "/faclities/6.JPG",
       title: "Heavy Marine Engine Machining Bay",
-      category: "Maritime"
-    }
+      category: "Maritime",
+    },
   ];
 
   const filteredImages =
@@ -63,25 +71,24 @@ export default function GalleryPage() {
       : images.filter((img) => img.category === selectedFilter);
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen pb-20">
-      
+    <div className="bg-surface-alt min-h-screen pb-20">
       {/* Header Banner */}
-      <div className="bg-[#0A192F] text-white py-16 sm:py-20 text-center">
+      <div className="bg-primary-navy text-white py-16 sm:py-20 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-xs uppercase font-bold text-[#D4AF37] tracking-wider block mb-2">
+          <span className="text-xs uppercase font-bold text-accent-gold tracking-wider block mb-2">
             Visual Media & Campus Life
           </span>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl text-white mb-4">
             KSA Campus <span className="text-gradient-gold">Gallery</span>
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto">
-            High-resolution visual archives of constituent college laboratories, graduation ceremonies, ship simulators, and campus life.
+            High-resolution visual archives of constituent college laboratories,
+            graduation ceremonies, ship simulators, and campus life.
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
-        
         {/* Category Filters */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
           {filters.map((f) => (
@@ -91,8 +98,8 @@ export default function GalleryPage() {
               className={cn(
                 "px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer",
                 selectedFilter === f
-                  ? "bg-[#0A192F] text-[#D4AF37] shadow-lg"
-                  : "bg-white text-slate-600 hover:bg-slate-200 border border-slate-200"
+                  ? "bg-primary-navy text-accent-gold shadow-lg"
+                  : "bg-white text-slate-600 hover:bg-slate-200 border border-slate-200",
               )}
             >
               {f}
@@ -107,14 +114,16 @@ export default function GalleryPage() {
               key={idx}
               className="group relative h-72 rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-slate-900"
             >
-              <img
+              <Image
                 src={img.url}
                 alt={img.title}
+                width={600}
+                height={400}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/90 via-[#0A192F]/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-primary-navy/90 via-primary-navy/20 to-transparent" />
               <div className="absolute bottom-4 left-6 right-6 z-10">
-                <span className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider block">
+                <span className="text-[10px] font-bold text-accent-gold uppercase tracking-wider block">
                   {img.category}
                 </span>
                 <h4 className="text-lg font-bold text-white font-heading">
@@ -124,9 +133,7 @@ export default function GalleryPage() {
             </div>
           ))}
         </div>
-
       </div>
-
     </div>
   );
 }
