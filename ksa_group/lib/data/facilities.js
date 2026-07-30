@@ -18,7 +18,7 @@ export const FACILITIES = [
     title: "High-Fidelity Clinical Simulation Ward",
     category: "Healthcare Infrastructure",
     college: "Kamarajar College of Nursing",
-    image: "/faclities/5.JPG",
+    image: "/college/0M5A8536.JPG",
     description:
       "Robotic computerized patient mannequins simulating cardiac arrests, vital sign fluctuations, pediatric emergencies, and maternal delivery for stress-free hands-on clinical mastery.",
     specs: [
@@ -32,8 +32,7 @@ export const FACILITIES = [
     title: "Central Digital Library & Resource Center",
     category: "Academic Support",
     college: "KSA Central Campus",
-    image:
-      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1200",
+    image: "/college/0M5A8628.JPG",
     description:
       "Over 45,000 physical volumes, subscriptions to IEEE, ScienceDirect, PubMed, and 24/7 high-speed digital research terminals with quiet study zones.",
     specs: [
