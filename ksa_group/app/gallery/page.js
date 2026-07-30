@@ -30,31 +30,31 @@ export default function GalleryPage() {
     },
     {
       url: "/college/3.jpg",
-      title: "Pharma Analytical Instrument Suite",
-      category: "Pharmacy",
+      title: "Training Center",
+      category: "Maritime",
     },
     {
-      url: "/college/0M5A8803.JPG",
+      url: "/college/DJI_0542.webp",
       title: "Annual Degree Convocation Ceremony",
       category: "Graduation",
     },
     {
-      url: "/college/k-con-about-us.webp",
+      url: "/college/0M5A8639.JPG",
       title: "Central Digital Resource Library",
       category: "Campus Life",
     },
     {
       url: "/faclities/7.JPG",
-      title: "Green Campus Hostels & Sports Ground",
+      title: "Eco-Friendly Campus & Sports Center",
       category: "Campus Life",
     },
     {
       url: "/college/1.JPG",
-      title: "Pediatric Clinical Nursing Ward",
+      title: "Students Life",
       category: "Nursing",
     },
     {
-      url: "/college/Our-Nursing-Students-768x466.webp",
+      url: "/college/0M5A8793.JPG",
       title: "Herbal Pharmacognosy Research Lab",
       category: "Pharmacy",
     },

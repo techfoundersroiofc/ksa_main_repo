@@ -30,7 +30,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       highlight: "DIGITAL HEADQUARTERS",
       subtitle:
         "Governing Premier Accredited Colleges in Healthcare, Pharmacy & Maritime Nautical Sciences.",
-      bgImage: "/college/1.JPG",
+      bgImage: "/college/1.webp",
       badge: "INC • PCI • AICTE • DGS A1 RATED",
       stat: "98% Global Placements",
     },
@@ -132,7 +132,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       </div>
 
       {/* 2. HERO CAROUSEL SLIDER BANNERS */}
-      <div className="relative h-130 sm:h-145 lg:h-160 xl:h-250 w-full overflow-hidden">
+      <div className="relative h-130 sm:h-145 lg:h-200 xl:h-260 w-full overflow-hidden">
         {slides.map((slide, idx) => {
           const isActive = idx === currentSlide;
           return (

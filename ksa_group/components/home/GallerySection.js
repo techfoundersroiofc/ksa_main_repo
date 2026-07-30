@@ -21,12 +21,12 @@ export default function GallerySection() {
       category: "Pharmacy",
     },
     {
-      url: "/college/0M5A8803.JPG",
+      url: "/college/DJI_0542.webp",
       title: "Inagural Cermony",
       category: "Graduation",
     },
     {
-      url: "/college/k-con-about-us.webp",
+      url: "/college/0M5A8639.JPG",
       title: "Central Digital Library",
       category: "Academics",
     },

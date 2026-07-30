@@ -92,15 +92,48 @@ export const INSTITUTIONS = [
     },
     programs: [
       {
+        id: "d-pharm",
+        name: "Diploma in Pharmacy (D.Pharm)",
+        level: "Diploma",
+        duration: "2 Years",
+        eligibility:
+          "10+2 with Physics, Chemistry & Biology / Mathematics (Min 50%)",
+        intake: 60,
+        description:
+          "A fundamental qualification focusing on the preparation, dispensing, and distribution of medications, ideal for retail and hospital pharmacy careers.",
+      },
+      {
         id: "b-pharm",
         name: "Bachelor of Pharmacy (B.Pharm)",
         level: "Undergraduate",
-        duration: "",
+        duration: "4 Years",
         eligibility:
           "10+2 with Physics, Chemistry & Biology / Mathematics (Min 50%)",
         intake: 100,
         description:
           "Comprehensive core degree covering pharmaceutics, pharmacology, medicinal chemistry, and pharmacognosy.",
+      },
+      {
+        id: "m-pharm",
+        name: "Master of Pharmacy (M.Pharm)",
+        level: "Postgraduate",
+        duration: "2 Years",
+        eligibility:
+          "B.Pharm degree from a PCI-approved institution with minimum 55% marks",
+        intake: 18,
+        description:
+          "Advanced specialization program with opportunities in pharmaceutical formulation, QA, and clinical research.",
+      },
+      {
+        id: "pharm-d",
+        name: "Doctor of Pharmacy (Pharm.D)",
+        level: "Doctoral / Professional",
+        duration: "5 Years",
+        eligibility:
+          "10+2 with Physics, Chemistry & Biology / Mathematics (Min 50%) or D.Pharm",
+        intake: 30,
+        description:
+          "An elite professional clinical doctorate training students in clinical pharmacy services, drug monitoring, and patient care.",
       },
     ],
     contact: {
