@@ -13,7 +13,7 @@ export const INSTITUTIONS = [
       "Indian Nursing Council (INC) & TNNC Approved | Grade 'A' Accredited",
     description:
       "Kamarajar College of Nursing is a premier healthcare education institution dedicated to nurturing clinical excellence, empathetic patient care, and cutting-edge medical research. Equipped with multi-specialty simulation labs and tie-ups with top super-specialty hospitals.",
-    heroImage: "/college/1.JPG",
+    heroImage: "/college/1.webp",
     campusImage:
       "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200",
     stats: [
