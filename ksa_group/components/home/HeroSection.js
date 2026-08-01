@@ -56,6 +56,17 @@ export default function HeroSection({ onOpenApplyModal }) {
       badge: "INC, TNNC & PCI APPROVED",
       stat: "1,200+ Clinical Bed Tie-ups",
     },
+    {
+      id: 4,
+      tag: "HEALTHCARE & PHARMA RESEARCH",
+      title: "NURSING & PHARMACEUTICAL",
+      highlight: "CLINICAL MASTERY",
+      subtitle:
+        "High-Fidelity Simulation ICUs, Advanced HPLC R&D Cleanrooms & UK NHS Placement Pathways.",
+      bgImage: "/college/0M5A8536.JPG",
+      badge: "INC, TNNC & PCI APPROVED",
+      stat: "1,200+ Clinical Bed Tie-ups",
+    },
   ];
 
   const newsTicker = [

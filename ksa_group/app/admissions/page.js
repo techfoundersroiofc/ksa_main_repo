@@ -13,23 +13,155 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+export const ALL_PROGRAMS = [
+  {
+    id: "bsc-nursing",
+    title: "B.Sc Nursing",
+    collegeId: "nursing",
+    collegeName: "Kamarajar College of Nursing",
+    category: "Nursing",
+    level: "Undergraduate",
+    duration: "4 Years",
+    fees: "₹1,20,000 / Year",
+    seats: 100,
+    rating: "4.9/5",
+    eligibility: "10+2 with Physics, Chemistry, Biology & English (Min 50%)",
+    highlights: [
+      "Clinical simulation labs",
+      "Attached multi-specialty hospital",
+      "NCLEX-RN coaching",
+    ],
+    overview:
+      "Designed according to Indian Nursing Council (INC) guidelines to produce competent professional nurses capable of working across acute and primary healthcare settings worldwide.",
+  },
+  {
+    id: "gp-rating",
+    title: "General Purpose (GP) Rating",
+    collegeId: "maritime",
+    collegeName: "Kamarajar College of Maritime",
+    category: "Maritime",
+    level: "Certificate",
+    duration: "6 Months",
+    fees: "₹1,50,000 Total",
+    seats: 50,
+    rating: "4.8/5",
+    eligibility: "10th Standard with 40% aggregate and 40% in English",
+    highlights: [
+      "DGS Approved Course",
+      "Seamanship training",
+      "Merchant vessel placement",
+    ],
+    overview:
+      "Intensive practical seamanship training preparing deck and engine room ratings for merchant vessels.",
+  },
+  {
+    id: "bst",
+    title: "Basic STCW Safety Training Course (BST)",
+    collegeId: "maritime",
+    collegeName: "Kamarajar College of Maritime",
+    category: "Maritime",
+    level: "Certificate",
+    duration: "11 Days",
+    fees: "₹15,000 Total",
+    seats: 40,
+    rating: "4.8/5",
+    eligibility: "10th Standard or equivalent + Medical Fitness Certificate",
+    highlights: [
+      "Mandatory DGS approved STCW course",
+      "PST, FPFF, EFA & PSSR modules",
+      "Essential for CDC & sailing",
+    ],
+    overview:
+      "Mandatory safety training program for all prospective seafarers, covering PST, FPFF, EFA, and PSSR in accordance with DGS and STCW guidelines.",
+  },
+  {
+    id: "d-pharm",
+    title: "Diploma in Pharmacy (D.Pharm)",
+    collegeId: "pharmacy",
+    collegeName: "Kamarajar College of Pharmacy",
+    category: "Pharmacy",
+    level: "Diploma",
+    duration: "2 Years",
+    fees: "₹80,000 / Year",
+    seats: 60,
+    rating: "4.7/5",
+    eligibility:
+      "10+2 with Physics, Chemistry & Biology / Mathematics (Min 50%)",
+    highlights: [
+      "PCI approved syllabus",
+      "Hands-on hospital pharmacy training",
+      "Well-equipped formulation labs",
+    ],
+    overview:
+      "A foundational course designed to train students in drug dispensing, storage, and pharmacy administration for retail and hospital sectors.",
+  },
+  {
+    id: "b-pharm",
+    title: "Bachelor of Pharmacy (B.Pharm)",
+    collegeId: "pharmacy",
+    collegeName: "Kamarajar College of Pharmacy",
+    category: "Pharmacy",
+    level: "Undergraduate",
+    duration: "4 Years",
+    fees: "₹1,40,000 / Year",
+    seats: 100,
+    rating: "4.9/5",
+    eligibility:
+      "10+2 with Physics, Chemistry & Biology / Mathematics (Min 50%)",
+    highlights: [
+      "Advanced R&D instrumentation labs",
+      "Industrial formulation internship",
+      "100% placement assistance",
+    ],
+    overview:
+      "A comprehensive degree program covering drug synthesis, analysis, clinical pharmacology, and pharmaceutical technology.",
+  },
+  {
+    id: "m-pharm",
+    title: "Master of Pharmacy (M.Pharm)",
+    collegeId: "pharmacy",
+    collegeName: "Kamarajar College of Pharmacy",
+    category: "Pharmacy",
+    level: "Postgraduate",
+    duration: "2 Years",
+    fees: "₹1,80,000 / Year",
+    seats: 18,
+    rating: "4.8/5",
+    eligibility:
+      "B.Pharm from a PCI-approved institution with minimum 55% marks",
+    highlights: [
+      "HPLC & FTIR research labs",
+      "MOU with active pharmaceutical companies",
+      "Patent filing & research paper guidance",
+    ],
+    overview:
+      "An advanced PG course focusing on specialized research in drug delivery systems, pharmacology, and quality assurance.",
+  },
+  {
+    id: "pharm-d",
+    title: "Doctor of Pharmacy (Pharm.D)",
+    collegeId: "pharmacy",
+    collegeName: "Kamarajar College of Pharmacy",
+    category: "Pharmacy",
+    level: "Doctoral / Professional",
+    duration: "5 Years",
+    fees: "₹2,50,000 / Year",
+    seats: 30,
+    rating: "4.9/5",
+    eligibility:
+      "10+2 with Physics, Chemistry & Biology / Mathematics (Min 50%) or D.Pharm",
+    highlights: [
+      "Attached multi-specialty clinical residency",
+      "Direct patient counseling experience",
+      "Advanced pharmacotherapeutics study",
+    ],
+    overview:
+      "A professional doctoral program training clinical pharmacists in therapeutic drug monitoring, hospital rounds, and patient care management.",
+  },
+];
+
 export default function AdmissionsPage() {
   const [modalOpen, setModalOpen] = useState(false);
-
-  const eligibilityTable = [
-    {
-      course: "B.Sc Nursing (4 Yrs)",
-      college: "Kamarajar Nursing",
-      criteria: "10+2 with Physics, Chemistry, Biology & English (Min 50%)",
-      fees: "₹1,20,000 / Year",
-    },
-    {
-      course: "General Purpose (GP) Rating (6 Months)",
-      college: "Kamarajar Maritime",
-      criteria: "10+2 with PCM (40%) & English (40%) + DGS Medical",
-      fees: "₹2,25,000 / Year",
-    },
-  ];
 
   return (
     <div className="bg-surface-alt min-h-screen pb-20">
@@ -85,15 +217,17 @@ export default function AdmissionsPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100 text-xs sm:text-sm text-slate-700">
-              {eligibilityTable.map((row, idx) => (
+              {ALL_PROGRAMS.map((row, idx) => (
                 <tr key={idx} className="hover:bg-slate-50 transition-colors">
                   <td className="p-4 sm:p-5 font-bold text-[#0A192F]">
-                    {row.course}
+                    {row.title} {row.duration && `(${row.duration})`}
                   </td>
                   <td className="p-4 sm:p-5 text-slate-500 font-medium">
-                    {row.college}
+                    {row.collegeName}
                   </td>
-                  <td className="p-4 sm:p-5 text-slate-600">{row.criteria}</td>
+                  <td className="p-4 sm:p-5 text-slate-600">
+                    {row.eligibility}
+                  </td>
                   <td className="p-4 sm:p-5 text-right font-extrabold text-[#0A192F]">
                     {row.fees}
                   </td>
