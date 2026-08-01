@@ -70,7 +70,8 @@ export default function Footer({ onOpenApplyModal }) {
                   <Award className="w-3.5 h-3.5 text-accent-gold" /> PCI & AICTE
                 </span>
                 <span className="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-[11px] text-slate-300 font-medium flex items-center gap-1.5 shadow-sm">
-                  <Globe className="w-3.5 h-3.5 text-accent-gold" /> DGS Grade A1
+                  <Globe className="w-3.5 h-3.5 text-accent-gold" /> DGS Grade
+                  A1
                 </span>
                 <span className="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-[11px] text-slate-300 font-medium flex items-center gap-1.5 shadow-sm">
                   <ShieldCheck className="w-3.5 h-3.5 text-accent-gold" /> IMU &
@@ -185,7 +186,17 @@ export default function Footer({ onOpenApplyModal }) {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
             © {new Date().getFullYear()} KSA Group of Institutions. All Rights
-            Reserved.
+            Reserved.{" "}
+            <span className="hidden sm:inline text-slate-600 mx-1">|</span>{" "}
+            Developed with ❤️{" "}
+            <a
+              href="https://www.foundersroi.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-300 hover:text-accent-gold transition-colors font-medium"
+            >
+              foundersroi
+            </a>
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6">
             <Link
