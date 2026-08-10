@@ -12,7 +12,7 @@ export default function AboutSection() {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
-                src="/college/DJI_0542.webp"
+                src="/college/collegeabout.png"
                 alt="KSA Group Campus"
                 className="w-full h-112.5 object-cover"
                 width={1200}

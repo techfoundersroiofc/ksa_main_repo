@@ -186,7 +186,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       </div>
 
       {/* 2. HERO CAROUSEL SLIDER BANNERS */}
-      <div className="relative h-130 sm:h-130 lg:h-150 xl:h-240 w-full overflow-hidden">
+      <div className="relative h-130 sm:h-130 lg:h-100 xl:h-240 w-full overflow-hidden">
         {slides.map((slide, idx) => {
           const isActive = idx === currentSlide;
           return (
