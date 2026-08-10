@@ -1,16 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
 import {
   ChevronLeft,
   ChevronRight,
   Sparkles,
   ArrowRight,
-  Search,
-  Award,
   ShieldCheck,
-  Building2,
+  Award,
   Bell,
 } from "lucide-react";
 import { INSTITUTIONS } from "@/lib/data/institutions";
@@ -21,69 +19,109 @@ export default function HeroSection({ onOpenApplyModal }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedInstitution, setSelectedInstitution] = useState("all");
   const [selectedProgram, setSelectedProgram] = useState("all");
+  const videoRef = useRef(null);
 
-  const slides = [
-    {
-      id: 1,
-      tag: "OVER 20 YEARS OF ACADEMIC LEADERSHIP",
-      title: "KSA GROUP OF INSTITUTIONS",
-      highlight: "DIGITAL HEADQUARTERS",
-      subtitle:
-        "Governing Premier Accredited Colleges in Healthcare, Pharmacy & Maritime Nautical Sciences.",
-      bgImage: "/college/1.webp",
-      badge: "INC • PCI • AICTE • DGS A1 RATED",
-      stat: "98% Global Placements",
-    },
-    {
-      id: 2,
-      tag: "ELITE MERCHANT NAVY ACADEMY",
-      title: "KAMARAJAR COLLEGE OF MARITIME",
-      highlight: "NAUTICAL EXCELLENCE",
-      subtitle:
-        "Featuring 360° Full-Mission Bridge Simulator, Heavy Engine Workshop & DGS Grade A1 Rating.",
-      bgImage: "/college/2.JPG",
-      badge: "APPROVED BY DGS & IMU AFFILIATED",
-      stat: "100% Sailing Sponsorship",
-    },
-    {
-      id: 3,
-      tag: "HEALTHCARE & PHARMA RESEARCH",
-      title: "NURSING & PHARMACEUTICAL",
-      highlight: "CLINICAL MASTERY",
-      subtitle:
-        "High-Fidelity Simulation ICUs, Advanced HPLC R&D Cleanrooms & UK NHS Placement Pathways.",
-      bgImage: "/college/3.JPG",
-      badge: "INC, TNNC & PCI APPROVED",
-      stat: "1,200+ Clinical Bed Tie-ups",
-    },
-    {
-      id: 4,
-      tag: "HEALTHCARE & PHARMA RESEARCH",
-      title: "NURSING & PHARMACEUTICAL",
-      highlight: "CLINICAL MASTERY",
-      subtitle:
-        "High-Fidelity Simulation ICUs, Advanced HPLC R&D Cleanrooms & UK NHS Placement Pathways.",
-      bgImage: "/college/0M5A8536.JPG",
-      badge: "INC, TNNC & PCI APPROVED",
-      stat: "1,200+ Clinical Bed Tie-ups",
-    },
-  ];
+  // Wrapped in useMemo to stabilize the array reference on every render
+  const slides = useMemo(
+    () => [
+      {
+        id: "video",
+        type: "video",
+        src: "/drone (1).mp4",
+        tag: "KSA CAMPUS AERIAL VIEW",
+        title: "EXPERIENCE WORLD-CLASS",
+        highlight: "INFRASTRUCTURE",
+        subtitle:
+          "Explore our expansive green campuses, advanced simulation labs, and state-of-the-art facilities.",
+        badge: "INC • PCI • AICTE • DGS A1 RATED",
+        stat: "20+ Acres Smart Campus",
+      },
+      {
+        id: 1,
+        type: "image",
+        tag: "OVER 20 YEARS OF ACADEMIC LEADERSHIP",
+        title: "KSA GROUP OF INSTITUTIONS",
+        highlight: "DIGITAL HEADQUARTERS",
+        subtitle:
+          "Governing Premier Accredited Colleges in Healthcare, Pharmacy & Maritime Nautical Sciences.",
+        bgImage: "/college/1.webp",
+        badge: "INC • PCI • AICTE • DGS A1 RATED",
+        stat: "98% Global Placements",
+      },
+      {
+        id: 2,
+        type: "image",
+        tag: "ELITE MERCHANT NAVY ACADEMY",
+        title: "KAMARAJAR COLLEGE OF MARITIME",
+        highlight: "NAUTICAL EXCELLENCE",
+        subtitle:
+          "Featuring 360° Full-Mission Bridge Simulator, Heavy Engine Workshop & DGS Grade A1 Rating.",
+        bgImage: "/college/2.JPG",
+        badge: "APPROVED BY DGS & IMU AFFILIATED",
+        stat: "100% Sailing Sponsorship",
+      },
+      {
+        id: 3,
+        type: "image",
+        tag: "HEALTHCARE & PHARMA RESEARCH",
+        title: "NURSING & PHARMACEUTICAL",
+        highlight: "CLINICAL MASTERY",
+        subtitle:
+          "High-Fidelity Simulation ICUs, Advanced HPLC R&D Cleanrooms & UK NHS Placement Pathways.",
+        bgImage: "/college/3.JPG",
+        badge: "INC, TNNC & PCI APPROVED",
+        stat: "1,200+ Clinical Bed Tie-ups",
+      },
+      {
+        id: 4,
+        type: "image",
+        tag: "HEALTHCARE & PHARMA RESEARCH",
+        title: "NURSING & PHARMACEUTICAL",
+        highlight: "CLINICAL MASTERY",
+        subtitle:
+          "High-Fidelity Simulation ICUs, Advanced HPLC R&D Cleanrooms & UK NHS Placement Pathways.",
+        bgImage: "/college/0M5A8536.JPG",
+        badge: "INC, TNNC & PCI APPROVED",
+        stat: "1,200+ Clinical Bed Tie-ups",
+      },
+    ],
+    [],
+  );
 
-  const newsTicker = [
-    "Admissions Open for Academic Session 2026-2027 Across All Constituent Colleges.",
-    "KSA Group Achieves Record 98% Placement Rate with 45+ Global Recruiters.",
-    "Kamarajar College of Maritime Re-Certified with DGS Grade 'A1 Outstanding' Rating.",
-    "Kamarajar College of Nursing Signs MoU with UK NHS Healthcare Trust for Direct Global Recruitment.",
-  ];
+  const newsTicker = useMemo(
+    () => [
+      "Admissions Open for Academic Session 2026-2027 Across All Constituent Colleges.",
+      "KSA Group Achieves Record 98% Placement Rate with 45+ Global Recruiters.",
+      "Kamarajar College of Maritime Re-Certified with DGS Grade 'A1 Outstanding' Rating.",
+      "Kamarajar College of Nursing Signs MoU with UK NHS Healthcare Trust for Direct Global Recruitment.",
+    ],
+    [],
+  );
+
   const [tickerIndex, setTickerIndex] = useState(0);
 
-  // Auto slide carousel
+  // Carousel timer: ONLY runs when the current slide is an image.
+  // Pauses completely while the video is playing.
   useEffect(() => {
+    const currentItem = slides[currentSlide];
+
+    if (currentItem.type === "video") {
+      if (videoRef.current) {
+        videoRef.current.currentTime = 0;
+        videoRef.current.play().catch(() => {
+          // Handles browser autoplay blocks if any
+        });
+      }
+      return; // Do not set an interval timer for the video slide
+    }
+
+    // Auto-advance image slides every 6 seconds
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
+
     return () => clearInterval(timer);
-  }, [slides.length]);
+  }, [currentSlide, slides]);
 
   // Auto news ticker
   useEffect(() => {
@@ -91,7 +129,12 @@ export default function HeroSection({ onOpenApplyModal }) {
       setTickerIndex((prev) => (prev + 1) % newsTicker.length);
     }, 4000);
     return () => clearInterval(timer);
-  }, [newsTicker.length]);
+  }, [newsTicker]);
+
+  // Triggered natively when the video file finishes playing
+  const handleVideoEnded = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
@@ -117,7 +160,7 @@ export default function HeroSection({ onOpenApplyModal }) {
 
   return (
     <div className="relative w-full overflow-hidden bg-[#0A192F]">
-      {/* 1. NEWS UPDATE TICKER BAR (Top Bar like Sathyabama format) */}
+      {/* 1. NEWS UPDATE TICKER BAR */}
       <div className="border-b border-accent-gold/30 text-white text-xs py-2 px-4 flex items-center relative z-20">
         <div className="max-w-7xl mx-auto w-full flex flex-col sm:flex-row items-center gap-3">
           <div className="bg-accent-gold text-[#0A192F] px-3 py-1 font-extrabold uppercase tracking-wider text-[11px] flex items-center gap-1.5 shrink-0 rounded-sm">
@@ -143,7 +186,7 @@ export default function HeroSection({ onOpenApplyModal }) {
       </div>
 
       {/* 2. HERO CAROUSEL SLIDER BANNERS */}
-      <div className="relative h-130 sm:h-145 lg:h-200 xl:h-260 w-full overflow-hidden">
+      <div className="relative h-130 sm:h-130 lg:h-150 xl:h-240 w-full overflow-hidden">
         {slides.map((slide, idx) => {
           const isActive = idx === currentSlide;
           return (
@@ -155,17 +198,28 @@ export default function HeroSection({ onOpenApplyModal }) {
                   : "opacity-0 z-0 pointer-events-none"
               }`}
             >
-              {/* Image & Dark Gradient Overlay */}
-              <Image
-                src={slide.bgImage}
-                alt={slide.title}
-                unoptimized
-                width={1920}
-                height={1080}
-                className="w-full h-full object-cover scale-105 transition-transform duration-10000"
-              />
-              <div className="absolute inset-0 " />
-              <div className="absolute inset-0 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] bg-size-[24px_24px] opacity-15" />
+              {slide.type === "video" ? (
+                <video
+                  ref={videoRef}
+                  src={slide.src}
+                  muted
+                  playsInline
+                  autoPlay
+                  onEnded={handleVideoEnded}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <Image
+                  src={slide.bgImage}
+                  alt={slide.title}
+                  unoptimized
+                  width={1920}
+                  height={1080}
+                  className="w-full h-full object-cover scale-105 transition-transform duration-10000"
+                />
+              )}
+
+              {/* Dark Gradient Overlays */}
 
               {/* Content Overlay */}
               <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center relative z-20">
@@ -257,15 +311,14 @@ export default function HeroSection({ onOpenApplyModal }) {
         </div>
       </div>
 
-      {/* 3. QUICK PROGRAM FINDER BAR OVERLAY ("YOUR FUTURE BEGINS AT KSA") */}
-      <div className="relative z-30  border-t-2 border-accent-gold shadow-2xl">
+      {/* 3. QUICK PROGRAM FINDER BAR */}
+      <div className="relative z-30 border-t-2 border-accent-gold shadow-2xl bg-[#0A192F]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <form
             onSubmit={handleExploreSearch}
             className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between"
           >
-            {/* Left Block: "YOUR FUTURE BEGINS AT KSA" */}
-            <div className=" py-4 px-6 lg:py-6 border-b lg:border-b-0 lg:border-r border-slate-800 flex items-center gap-3 shrink-0">
+            <div className="py-4 px-6 lg:py-6 border-b lg:border-b-0 lg:border-r border-slate-800 flex items-center gap-3 shrink-0">
               <div className="w-3 h-8 bg-accent-gold rounded-sm hidden sm:block" />
               <div>
                 <span className="text-[10px] uppercase font-bold text-accent-gold tracking-widest block">
@@ -277,9 +330,7 @@ export default function HeroSection({ onOpenApplyModal }) {
               </div>
             </div>
 
-            {/* Middle Selectors */}
             <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 lg:py-0 lg:px-6">
-              {/* Institution Selector */}
               <div>
                 <label className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">
                   Constituent Institution
@@ -301,7 +352,6 @@ export default function HeroSection({ onOpenApplyModal }) {
                 </select>
               </div>
 
-              {/* Course Selector */}
               <div>
                 <label className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">
                   Course / Program
@@ -326,7 +376,6 @@ export default function HeroSection({ onOpenApplyModal }) {
               </div>
             </div>
 
-            {/* Right Action Button: EXPLORE → */}
             <div className="p-4 lg:py-0 lg:pl-0 shrink-0">
               <button
                 type="submit"
@@ -340,7 +389,7 @@ export default function HeroSection({ onOpenApplyModal }) {
         </div>
       </div>
 
-      {/* 4. STICKY SIDE ADMISSION ENQUIRY TAB (Right edge float like Sathyabama format) */}
+      {/* 4. STICKY SIDE ADMISSION ENQUIRY TAB */}
       <button
         onClick={onOpenApplyModal}
         className="fixed right-0 top-1/2 -translate-y-1/2 z-40 bg-linear-to-b from-[#D4AF37] to-[#B8902A] text-[#0A192F] font-extrabold text-xs tracking-wider uppercase py-4 px-2.5 rounded-l-2xl shadow-2xl hover:scale-105 transition-all cursor-pointer flex flex-col items-center gap-2 border-l border-t border-b border-[#0A192F]/30"
