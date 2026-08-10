@@ -146,11 +146,11 @@ export default function Navbar({ onOpenApplyModal }) {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "bg-primary-navy/95 backdrop-blur-md border-b border-accent-gold/20 shadow-2xl py-2"
+          ? "bg-primary-navy backdrop-blur-md border-b border-accent-gold/20 shadow-2xl py-2"
           : "bg-primary-navy py-3.5 border-b border-white/10",
       )}
     >
-      <div className="max-w-7xl mx-auto px-12 md:px-15 w-full">
+      <div className="max-w-7xl mx-auto w-full">
         <div className="flex items-center justify-between gap-3">
           {/* Logo Section */}
           <Link
@@ -158,24 +158,16 @@ export default function Navbar({ onOpenApplyModal }) {
             className="flex items-center gap-2 group shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold rounded-xl"
             aria-label="KSA Group of Institutions Home"
           >
-            <div className="relative p-1 bg-white/95 rounded-xl border border-accent-gold/40 shadow-md group-hover:scale-105 transition-transform flex items-center justify-center">
+            <div className="relative rounded-xl  group-hover:scale-105 transition-transform flex items-center justify-center">
               <Image
-                src="/logo/Main_logo.PNG"
+                src="/logo/logofinal-removebg-preview.png"
                 alt="KSA Group of Institutions Official Logo"
-                className="h-20 lg:h-11  w-auto object-contain"
+                className="h-25 w-auto object-cover"
                 width={100}
                 height={100}
                 priority
                 unoptimized
               />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-extrabold text-sm sm:text-4xl lg:text-xl tracking-tight text-white flex items-center gap-1 leading-tight">
-                KSA
-              </span>
-              <span className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest font-medium">
-                GROUP OF INSTITUTIONS
-              </span>
             </div>
           </Link>
 
@@ -317,7 +309,7 @@ export default function Navbar({ onOpenApplyModal }) {
 
               {academicsMenuOpen && (
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50">
-                  <div className="bg-primary-navy-deep border border-accent-gold/30 rounded-2xl p-2.5 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150 flex flex-col gap-1.5">
+                  <div className="bg-primary-navy border border-accent-gold/30 rounded-2xl p-2.5 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150 flex flex-col gap-1.5">
                     {academicsLinks.map((item) => {
                       const IconComponent = item.icon;
                       const isActive = pathname === item.href;
