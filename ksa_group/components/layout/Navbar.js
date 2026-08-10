@@ -15,6 +15,10 @@ import {
   ArrowRight,
   GraduationCap,
   PhoneCall,
+  BookOpen,
+  Calendar,
+  Briefcase,
+  Building,
 } from "lucide-react";
 import { INSTITUTIONS } from "@/lib/data/institutions";
 import { cn } from "@/lib/utils";
@@ -24,7 +28,12 @@ export default function Navbar({ onOpenApplyModal }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+  const [academicsMenuOpen, setAcademicsMenuOpen] = useState(false);
+  const [updatesMenuOpen, setUpdatesMenuOpen] = useState(false);
+
   const megaMenuTimeoutRef = useRef(null);
+  const academicsTimeoutRef = useRef(null);
+  const updatesTimeoutRef = useRef(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -35,11 +44,13 @@ export default function Navbar({ onOpenApplyModal }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change & lock background scroll when mobile menu is open
+  // Close menus on route change & lock background scroll when mobile menu is open
   useEffect(() => {
     const timer = setTimeout(() => {
       setMobileMenuOpen(false);
       setMegaMenuOpen(false);
+      setAcademicsMenuOpen(false);
+      setUpdatesMenuOpen(false);
     }, 0);
     return () => clearTimeout(timer);
   }, [pathname]);
@@ -55,14 +66,14 @@ export default function Navbar({ onOpenApplyModal }) {
     };
   }, [mobileMenuOpen]);
 
-  const handleMouseEnter = () => {
-    if (megaMenuTimeoutRef.current) clearTimeout(megaMenuTimeoutRef.current);
-    setMegaMenuOpen(true);
+  const handleMouseEnter = (setOpen, timeoutRef) => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setOpen(true);
   };
 
-  const handleMouseLeave = () => {
-    megaMenuTimeoutRef.current = setTimeout(() => {
-      setMegaMenuOpen(false);
+  const handleMouseLeave = (setOpen, timeoutRef) => {
+    timeoutRef.current = setTimeout(() => {
+      setOpen(false);
     }, 150);
   };
 
@@ -79,10 +90,47 @@ export default function Navbar({ onOpenApplyModal }) {
     }
   };
 
-  const navLinks = [
+  // Grouped dropdown lists
+  const academicsLinks = [
+    {
+      name: "Academics",
+      href: "/academics",
+      icon: BookOpen,
+      desc: "Explore our curriculum & programs",
+    },
+    {
+      name: "Admissions",
+      href: "/admissions",
+      icon: GraduationCap,
+      desc: "Eligibility, process & dates",
+    },
+    {
+      name: "Facilities",
+      href: "/facilities",
+      icon: Building,
+      desc: "World-class campus infrastructure",
+    },
+  ];
+
+  const updatesLinks = [
+    {
+      name: "News & Events",
+      href: "/news",
+      icon: Calendar,
+      desc: "Latest announcements & updates",
+    },
+    {
+      name: "Careers",
+      href: "/careers",
+      icon: Briefcase,
+      desc: "Join our professional faculty",
+    },
+  ];
+
+  const allMobileNavLinks = [
     { name: "Home", href: "/" },
     { name: "About KSA", href: "/about" },
-    { name: "Institutions", href: "/institutions", hasMega: true },
+    { name: "Institutions", href: "/institutions" },
     { name: "Academics", href: "/academics" },
     { name: "Admissions", href: "/admissions" },
     { name: "Facilities", href: "/facilities" },
@@ -99,13 +147,12 @@ export default function Navbar({ onOpenApplyModal }) {
         "sticky top-0 z-50 w-full transition-all duration-300",
         scrolled
           ? "bg-primary-navy/95 backdrop-blur-md border-b border-accent-gold/20 shadow-2xl py-2"
-          : "bg-primary-navy py-3 border-b border-white/10",
+          : "bg-primary-navy py-3.5 border-b border-white/10",
       )}
     >
-      {/* Optimized max-width container with balanced padding for laptops */}
-      <div className="max-w-7xl mx-auto px-2 lg:px-0 w-full">
-        <div className="flex items-center justify-between gap-2">
-          {/* Logo with proper Semantic SEO structure */}
+      <div className="max-w-7xl mx-auto px-12 md:px-15 w-full">
+        <div className="flex items-center justify-between gap-3">
+          {/* Logo Section */}
           <Link
             href="/"
             className="flex items-center gap-2 group shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold rounded-xl"
@@ -115,134 +162,292 @@ export default function Navbar({ onOpenApplyModal }) {
               <Image
                 src="/logo/Main_logo.PNG"
                 alt="KSA Group of Institutions Official Logo"
-                className="h-8 sm:h-9 w-auto object-contain"
-                width={90}
-                height={90}
+                className="h-20 lg:h-11  w-auto object-contain"
+                width={100}
+                height={100}
                 priority
                 unoptimized
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-heading font-extrabold text-sm sm:text-base tracking-tight text-white flex items-center gap-1 leading-none">
-                KSA{" "}
-                <span className="text-accent-gold font-semibold">GROUP</span>
+              <span className="font-heading font-extrabold text-sm sm:text-4xl lg:text-xl tracking-tight text-white flex items-center gap-1 leading-tight">
+                KSA
               </span>
-              <span className="text-[7px] sm:text-[8px] text-slate-300 uppercase tracking-widest font-medium mt-0.5">
-                Institutions of Excellence
+              <span className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest font-medium">
+                GROUP OF INSTITUTIONS
               </span>
             </div>
           </Link>
 
-          {/* Desktop Navigation - finely spaced for all laptop resolutions */}
+          {/* Desktop Navigation */}
           <nav
             aria-label="Main Navigation"
-            className="hidden lg:flex items-center gap-0.5 xl:gap-1.5"
+            className="hidden lg:flex items-center"
           >
-            {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+            <Link
+              href="/"
+              className={cn(
+                "px-2 py-2 text-xs xl:text-sm font-medium rounded-lg transition-colors whitespace-nowrap",
+                pathname === "/"
+                  ? "text-accent-gold bg-white/10"
+                  : "text-slate-200 hover:text-accent-gold hover:bg-white/5",
+              )}
+            >
+              Home
+            </Link>
 
-              if (link.hasMega) {
-                return (
-                  <div
-                    key={link.name}
-                    className="relative"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <button
-                      onClick={() => setMegaMenuOpen(!megaMenuOpen)}
-                      className={cn(
-                        "flex items-center gap-1 px-2 py-1.5 text-xs xl:text-sm font-medium rounded-lg transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold",
-                        isActive || pathname.startsWith("/institutions")
-                          ? "text-accent-gold bg-white/10"
-                          : "text-slate-200 hover:text-accent-gold hover:bg-white/5",
-                      )}
-                      aria-expanded={megaMenuOpen}
-                      aria-haspopup="true"
-                    >
-                      {link.name}
-                      <ChevronDown
-                        className={cn(
-                          "w-3 h-3 transition-transform duration-200",
-                          megaMenuOpen && "rotate-180 text-accent-gold",
-                        )}
-                      />
-                    </button>
+            <Link
+              href="/about"
+              className={cn(
+                "px-3 py-2 text-xs xl:text-sm font-medium rounded-lg transition-colors whitespace-nowrap",
+                pathname === "/about"
+                  ? "text-accent-gold bg-white/10"
+                  : "text-slate-200 hover:text-accent-gold hover:bg-white/5",
+              )}
+            >
+              About
+            </Link>
 
-                    {/* Mega Menu Dropdown */}
-                    {megaMenuOpen && (
-                      <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-135 z-50">
-                        <div className="bg-primary-navy-deep border border-accent-gold/30 rounded-2xl p-4 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150">
-                          <div className="flex items-center justify-between border-b border-slate-800 pb-2.5 mb-2.5">
-                            <span className="text-[11px] uppercase font-bold text-accent-gold tracking-wider flex items-center gap-1.5">
-                              <Building2 className="w-3.5 h-3.5" /> Constituent
-                              Institutions
-                            </span>
-                            <Link
-                              href="/institutions"
-                              onClick={() => setMegaMenuOpen(false)}
-                              className="text-[11px] text-slate-400 hover:text-white flex items-center gap-1 transition-colors"
-                            >
-                              View All <ArrowRight className="w-3 h-3" />
-                            </Link>
-                          </div>
-
-                          <div className="grid grid-cols-1 gap-2">
-                            {INSTITUTIONS.map((inst) => (
-                              <Link
-                                key={inst.id}
-                                href={`/institutions/${inst.id}`}
-                                onClick={() => setMegaMenuOpen(false)}
-                                className="group/item flex items-start gap-3 p-2 rounded-xl hover:bg-white/5 border border-transparent hover:border-accent-gold/30 transition-all"
-                              >
-                                <div className="p-1.5 rounded-lg bg-slate-900/80 border border-slate-800 group-hover/item:border-accent-gold/40 shrink-0">
-                                  {getInstitutionIcon(inst.id)}
-                                </div>
-                                <div className="flex-1 min-w-0">
-                                  <div className="flex items-center justify-between gap-2">
-                                    <h4 className="text-xs font-semibold text-white group-hover/item:text-accent-gold transition-colors truncate">
-                                      {inst.name}
-                                    </h4>
-                                    <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-accent-gold/10 text-accent-gold shrink-0">
-                                      {inst.shortName}
-                                    </span>
-                                  </div>
-                                  <p className="text-[11px] text-slate-400 truncate mt-0.5">
-                                    {inst.tagline}
-                                  </p>
-                                </div>
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
+            {/* Institutions Mega Menu */}
+            <div
+              className="relative"
+              onMouseEnter={() =>
+                handleMouseEnter(setMegaMenuOpen, megaMenuTimeoutRef)
               }
-
-              return (
-                <Link
-                  key={link.name}
-                  href={link.href}
+              onMouseLeave={() =>
+                handleMouseLeave(setMegaMenuOpen, megaMenuTimeoutRef)
+              }
+            >
+              <button
+                onClick={() => setMegaMenuOpen(!megaMenuOpen)}
+                className={cn(
+                  "flex items-center gap-1 px-3 py-2 text-xs xl:text-sm font-medium rounded-lg transition-colors cursor-pointer",
+                  pathname.startsWith("/institutions")
+                    ? "text-accent-gold bg-white/10"
+                    : "text-slate-200 hover:text-accent-gold hover:bg-white/5",
+                )}
+                aria-expanded={megaMenuOpen}
+              >
+                Institutions
+                <ChevronDown
                   className={cn(
-                    "px-2 py-1.5 text-xs xl:text-sm font-medium rounded-lg transition-colors whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold",
-                    isActive
-                      ? "text-accent-gold bg-white/10"
-                      : "text-slate-200 hover:text-accent-gold hover:bg-white/5",
+                    "w-3.5 h-3.5 transition-transform duration-200",
+                    megaMenuOpen && "rotate-180 text-accent-gold",
                   )}
-                >
-                  {link.name}
-                </Link>
-              );
-            })}
+                />
+              </button>
+
+              {megaMenuOpen && (
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-135 z-50">
+                  <div className="bg-primary-navy-deep border border-accent-gold/30 rounded-2xl p-4 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150">
+                    <div className="flex items-center justify-between border-b border-slate-800 pb-2.5 mb-2.5">
+                      <span className="text-[11px] uppercase font-bold text-accent-gold tracking-wider flex items-center gap-1.5">
+                        <Building2 className="w-3.5 h-3.5" /> Constituent
+                        Institutions
+                      </span>
+                      <Link
+                        href="/institutions"
+                        onClick={() => setMegaMenuOpen(false)}
+                        className="text-[11px] text-slate-400 hover:text-white flex items-center gap-1 transition-colors"
+                      >
+                        View All <ArrowRight className="w-3 h-3" />
+                      </Link>
+                    </div>
+
+                    <div className="grid grid-cols-1 gap-2">
+                      {INSTITUTIONS.map((inst) => (
+                        <Link
+                          key={inst.id}
+                          href={`/institutions/${inst.id}`}
+                          onClick={() => setMegaMenuOpen(false)}
+                          className="group/item flex items-start gap-3 p-2 rounded-xl hover:bg-white/5 border border-transparent hover:border-accent-gold/30 transition-all"
+                        >
+                          <div className="p-1.5 rounded-lg bg-slate-900/80 border border-slate-800 group-hover/item:border-accent-gold/40 shrink-0">
+                            {getInstitutionIcon(inst.id)}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center justify-between gap-2">
+                              <h4 className="text-xs font-semibold text-white group-hover/item:text-accent-gold transition-colors truncate">
+                                {inst.name}
+                              </h4>
+                              <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-accent-gold/10 text-accent-gold shrink-0">
+                                {inst.shortName}
+                              </span>
+                            </div>
+                            <p className="text-[11px] text-slate-400 truncate mt-0.5">
+                              {inst.tagline}
+                            </p>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Academics & Admissions Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() =>
+                handleMouseEnter(setAcademicsMenuOpen, academicsTimeoutRef)
+              }
+              onMouseLeave={() =>
+                handleMouseLeave(setAcademicsMenuOpen, academicsTimeoutRef)
+              }
+            >
+              <button
+                onClick={() => setAcademicsMenuOpen(!academicsMenuOpen)}
+                className={cn(
+                  "flex items-center gap-1 px-3 py-2 text-xs xl:text-sm font-medium rounded-lg transition-colors cursor-pointer",
+                  academicsLinks.some((l) => pathname === l.href)
+                    ? "text-accent-gold bg-white/10"
+                    : "text-slate-200 hover:text-accent-gold hover:bg-white/5",
+                )}
+                aria-expanded={academicsMenuOpen}
+              >
+                Admissions
+                <ChevronDown
+                  className={cn(
+                    "w-3.5 h-3.5 transition-transform duration-200",
+                    academicsMenuOpen && "rotate-180 text-accent-gold",
+                  )}
+                />
+              </button>
+
+              {academicsMenuOpen && (
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50">
+                  <div className="bg-primary-navy-deep border border-accent-gold/30 rounded-2xl p-2.5 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150 flex flex-col gap-1.5">
+                    {academicsLinks.map((item) => {
+                      const IconComponent = item.icon;
+                      const isActive = pathname === item.href;
+                      return (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          onClick={() => setAcademicsMenuOpen(false)}
+                          className={cn(
+                            "flex items-start gap-2.5 p-2 rounded-xl transition-all border",
+                            isActive
+                              ? "bg-accent-gold/20 border-accent-gold/40 text-accent-gold"
+                              : "bg-slate-900/40 border-slate-800 text-slate-200 hover:bg-white/5 hover:text-white",
+                          )}
+                        >
+                          <div className="p-1.5 rounded-lg bg-slate-800 text-accent-gold shrink-0">
+                            <IconComponent className="w-3.5 h-3.5" />
+                          </div>
+                          <div>
+                            <div className="text-xs font-bold leading-tight">
+                              {item.name}
+                            </div>
+                            <div className="text-[10px] text-slate-400 mt-0.5">
+                              {item.desc}
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Updates & Careers Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() =>
+                handleMouseEnter(setUpdatesMenuOpen, updatesTimeoutRef)
+              }
+              onMouseLeave={() =>
+                handleMouseLeave(setUpdatesMenuOpen, updatesTimeoutRef)
+              }
+            >
+              <button
+                onClick={() => setUpdatesMenuOpen(!updatesMenuOpen)}
+                className={cn(
+                  "flex items-center gap-1 px-3 py-2 text-xs xl:text-sm font-medium rounded-lg transition-colors cursor-pointer",
+                  updatesLinks.some((l) => pathname === l.href)
+                    ? "text-accent-gold bg-white/10"
+                    : "text-slate-200 hover:text-accent-gold hover:bg-white/5",
+                )}
+                aria-expanded={updatesMenuOpen}
+              >
+                Careers
+                <ChevronDown
+                  className={cn(
+                    "w-3.5 h-3.5 transition-transform duration-200",
+                    updatesMenuOpen && "rotate-180 text-accent-gold",
+                  )}
+                />
+              </button>
+
+              {updatesMenuOpen && (
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50">
+                  <div className="bg-primary-navy-deep border border-accent-gold/30 rounded-2xl p-2.5 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150 flex flex-col gap-1.5">
+                    {updatesLinks.map((item) => {
+                      const IconComponent = item.icon;
+                      const isActive = pathname === item.href;
+                      return (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          onClick={() => setUpdatesMenuOpen(false)}
+                          className={cn(
+                            "flex items-start gap-2.5 p-2 rounded-xl transition-all border",
+                            isActive
+                              ? "bg-accent-gold/20 border-accent-gold/40 text-accent-gold"
+                              : "bg-slate-900/40 border-slate-800 text-slate-200 hover:bg-white/5 hover:text-white",
+                          )}
+                        >
+                          <div className="p-1.5 rounded-lg bg-slate-800 text-accent-gold shrink-0">
+                            <IconComponent className="w-3.5 h-3.5" />
+                          </div>
+                          <div>
+                            <div className="text-xs font-bold leading-tight">
+                              {item.name}
+                            </div>
+                            <div className="text-[10px] text-slate-400 mt-0.5">
+                              {item.desc}
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <Link
+              href="/gallery"
+              className={cn(
+                "px-3 py-2 text-xs xl:text-sm font-medium rounded-lg transition-colors whitespace-nowrap",
+                pathname === "/gallery"
+                  ? "text-accent-gold bg-white/10"
+                  : "text-slate-200 hover:text-accent-gold hover:bg-white/5",
+              )}
+            >
+              Gallery
+            </Link>
+
+            <Link
+              href="/contact"
+              className={cn(
+                "px-3 py-2 text-xs xl:text-sm font-medium rounded-lg transition-colors whitespace-nowrap",
+                pathname === "/contact"
+                  ? "text-accent-gold bg-white/10"
+                  : "text-slate-200 hover:text-accent-gold hover:bg-white/5",
+              )}
+            >
+              Contact
+            </Link>
           </nav>
 
           {/* Desktop Right CTA */}
           <div className="hidden lg:flex items-center gap-2 shrink-0">
             <button
               onClick={onOpenApplyModal}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-linear-to-r from-accent-gold via-[#E5C158] to-[#B8902A] text-[#0A192F] font-bold text-xs xl:text-sm shadow-lg hover:brightness-110 active:scale-95 transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-accent-gold via-[#E5C158] to-[#B8902A] text-[#0A192F] font-bold text-xs xl:text-sm shadow-lg hover:brightness-110 active:scale-95 transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white whitespace-nowrap"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#0A192F]" />
               Apply Now
@@ -253,7 +458,7 @@ export default function Navbar({ onOpenApplyModal }) {
           <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={onOpenApplyModal}
-              className="px-3 py-1.5 rounded-lg bg-linear-to-r from-accent-gold to-[#B8902A] text-[#0A192F] text-xs font-bold shadow-md active:scale-95 transition-transform"
+              className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-accent-gold to-[#B8902A] text-[#0A192F] text-xs font-bold shadow-md active:scale-95 transition-transform"
             >
               Apply
             </button>
@@ -273,12 +478,12 @@ export default function Navbar({ onOpenApplyModal }) {
         </div>
       </div>
 
-      {/* Redesigned Premium Mobile Full-Screen/Drawer Menu */}
+      {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-14.25 bottom-0 bg-primary-navy-deep/98 backdrop-blur-2xl border-t border-slate-800 shadow-2xl z-50 flex flex-col justify-between overflow-y-auto animate-in slide-in-from-top duration-300">
+        <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 bg-primary-navy-deep/98 backdrop-blur-2xl border-t border-slate-800 shadow-2xl z-50 flex flex-col justify-between overflow-y-auto animate-in slide-in-from-top duration-300">
           <div className="p-4 sm:p-5 flex flex-col gap-4 pb-10">
             {/* Quick Action Banner Header inside Mobile Drawer */}
-            <div className="flex items-center justify-between p-3 rounded-2xl bg-linear-to-r from-accent-gold/15 to-transparent border border-accent-gold/30">
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-gradient-to-r from-accent-gold/15 to-transparent border border-accent-gold/30">
               <div className="flex items-center gap-2.5">
                 <div className="p-2 rounded-xl bg-accent-gold text-primary-navy">
                   <GraduationCap className="w-4 h-4" />
@@ -303,13 +508,13 @@ export default function Navbar({ onOpenApplyModal }) {
               </button>
             </div>
 
-            {/* Core Links Grid / List */}
+            {/* Core Links Grid */}
             <div className="flex flex-col gap-1">
               <span className="text-[10px] font-extrabold uppercase tracking-widest text-accent-gold px-3 pb-1">
                 Explore Navigation
               </span>
               <div className="grid grid-cols-2 gap-1.5">
-                {navLinks.map((link) => {
+                {allMobileNavLinks.map((link) => {
                   const isActive = pathname === link.href;
                   return (
                     <Link
@@ -379,7 +584,7 @@ export default function Navbar({ onOpenApplyModal }) {
                   setMobileMenuOpen(false);
                   onOpenApplyModal();
                 }}
-                className="w-full py-3.5 rounded-xl bg-linear-to-r from-accent-gold via-[#E5C158] to-[#B8902A] text-[#0A192F] font-bold text-center shadow-xl text-sm flex items-center justify-center gap-2 active:scale-95 transition-transform"
+                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-accent-gold via-[#E5C158] to-[#B8902A] text-[#0A192F] font-bold text-center shadow-xl text-sm flex items-center justify-center gap-2 active:scale-95 transition-transform"
               >
                 <Sparkles className="w-4 h-4 text-[#0A192F]" /> Start Admission
                 Inquiry

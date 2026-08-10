@@ -15,7 +15,7 @@ export default function RootClientLayout({ children }) {
   return (
     <div className="min-h-screen flex flex-col bg-white selection:bg-accent-gold selection:text-[#0A192F] antialiased">
       {/* Sticky Top Bar & Navbar Layer */}
-      <div className="sticky top-0 z-50 w-full shadow-md">
+      <div className="sticky top-0 z-50  shadow-md">
         <AnnouncementBar onOpenApplyModal={handleOpenApplyModal} />
         <Navbar onOpenApplyModal={handleOpenApplyModal} />
       </div>
