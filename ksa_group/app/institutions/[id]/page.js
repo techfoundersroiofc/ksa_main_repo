@@ -103,7 +103,7 @@ export default async function InstitutionDetailPage({ params }) {
               alt={institution.dean.name}
               width={1920}
               height={1080}
-              className="w-full h-64 sm:h-72 object-cover rounded-2xl border-2 border-accent-gold"
+              className="w-full h-80 sm:h-100 object-cover rounded-2xl border-2 border-accent-gold"
             />
           </div>
           <div className="md:col-span-8 space-y-4">

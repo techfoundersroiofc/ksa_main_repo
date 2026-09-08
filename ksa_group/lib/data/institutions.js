@@ -34,11 +34,11 @@ export const INSTITUTIONS = [
     mission:
       "To transcend boundaries in achieving supremacy in delivering unparalleled, empathetic, and avant-garde nursing care. We are devoted to empowering the education of marginalized village women, fostering their ascent from socio-economic adversity into beacons of intellectual and professional brilliance.",
     dean: {
-      name: "KCN Academic Leadership Council",
+      name: "Dr. S. Suganthra Devi, M.Sc(N), Ph.D(N).,",
       designation: "Principal & Nursing Faculty Directorate",
       message:
-        "Nursing is more than earning a degree—it is a calling to serve with compassion, skill, and ethics. At Kamarajar College of Nursing in Chidambaram, we nurture responsible, caring, and confident healthcare professionals who radiate brilliance.",
-      avatar: "/college/1.webp",
+        "As an innovative thinker, my vision is to continually advance the frontiers of nursing education, integrating cutting-edge technology and pioneering methodologies to prepare our students for the challenges of a dynamic healthcare landscape. From state-of-the-art skill laboratories to global research initiatives, our institution is dedicated to delivering an education that is both contemporary and transformative. Holistic development is the hallmark of Kamarajar College of Nursing.",
+      avatar: "/principal/Nursing.jpeg",
     },
     programs: [
       {
@@ -97,7 +97,7 @@ export const INSTITUTIONS = [
       designation: "Principal (Vice Principal: Mrs. R. Sudha, M.Pharm., Ph.D.)",
       message:
         "The College is dedicated to the holistic development of students, combining academic excellence, practical competencies, and clinical exposure. With our 10+ MoUs and teaching hospital partnerships, we train future pioneers in pharmaceutical sciences and patient care.",
-      avatar: "/college/Our-Nursing-Students-768x466.webp",
+      avatar: "/principal/Pharmacy.jpeg",
     },
     programs: [
       {
@@ -203,7 +203,7 @@ export const INSTITUTIONS = [
       designation: "Principal",
       message:
         "At Kamarajar Polytechnic College, we emphasize practical application and industry readiness. Our dedicated faculty, high-tech labs, and generous scholarship schemes empower students to achieve success in top MNCs.",
-      avatar: "/college/collegeabout.png",
+      avatar: "/principal/Poly.jpeg",
     },
     programs: [
       {
