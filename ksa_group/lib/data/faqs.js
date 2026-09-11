@@ -11,7 +11,7 @@ export const FAQS = [
   {
     id: 1,
     question: "What constituent institutions operate under the KSA Educational & Charitable Trust?",
-    answer: "KSA Group manages four constituent colleges: Kamarajar College of Nursing (Chidambaram), Kamarajar College of Pharmacy (Cuddalore), Kamarajar Polytechnic College, and Kamarajar College of Maritime. All institutions function under the KSA Educational and Charitable Trust.",
+    answer: "KSA Group manages four constituent colleges: Kamarajar College of Nursing (Chidambaram), Kamarajar College of Pharmacy (Chidambaram), Kamarajar Polytechnic College, and Kamarajar College of Maritime. All institutions function under the KSA Educational and Charitable Trust.",
     category: "Institutions & Programs"
   },
   {

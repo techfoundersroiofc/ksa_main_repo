@@ -48,13 +48,13 @@ export const INSTITUTIONS = [
         duration: "4 Years",
         eligibility:
           "10+2 with Physics, Chemistry, Biology & English (Min 50%) recognized by INC & State Nursing Council",
-        intake: 100,
+        intake: 60,
         description:
           "A foundational healthcare degree producing skilled, empathetic, and professional nurses for clinical settings, hospitals, and community care globally.",
       },
     ],
     contact: {
-      phone: "+91 94876 08775 / +91 94864 19779",
+      phone: "9488178596 (Principal)/ 9894064101 (CEO)",
       email: "nursing@ksagroup.edu.in",
       location: "Chidambaram, Cuddalore District, Tamil Nadu",
     },
@@ -72,7 +72,7 @@ export const INSTITUTIONS = [
     accreditation:
       "2nd Place Awardee in Upcoming Institution Award (TN M.G.R. University Research Day 2025) | 10 Industry & Hospital MoUs",
     description:
-      "Kamarajar College of Pharmacy, Cuddalore, functioning under KSA Educational and Charitable Trust with nearly 100 dedicated staff members, is committed to professional excellence, research, innovation, and community development. Featuring tie-ups with Government Cuddalore Medical College Hospital (1,260 beds) and 10 industrial MoUs, KCP offers programs spanning D.Pharm, B.Pharm, Pharm.D, and M.Pharm specializations.",
+      "Kamarajar College of Pharmacy, Chidambaram, functioning under KSA Educational and Charitable Trust with nearly 100 dedicated staff members, is committed to professional excellence, research, innovation, and community development. Featuring tie-ups with Government Cuddalore Medical College Hospital (1,260 beds) and 10 industrial MoUs, KCP offers programs spanning D.Pharm, B.Pharm, Pharm.D, and M.Pharm specializations.",
     heroImage: "/college/Our-Nursing-Students-768x466.webp",
     campusImage:
       "https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?auto=format&fit=crop&q=80&w=1200",
@@ -157,10 +157,9 @@ export const INSTITUTIONS = [
       },
     ],
     contact: {
-      phone:
-        "+91 94876 08775 (CEO) / +91 94864 19779 (Principal) / +91 87782 74072 (Vice Principal)",
-      email: "pharmacy@ksagroup.edu.in",
-      location: "Kamarajar College of Pharmacy, Cuddalore, Tamil Nadu",
+      phone: "9486419779(Principal)/9894064101 (Ceo)",
+      email: "ksaednltrust.pharma@gmail.com",
+      location: "Chidambaram, Cuddalore District, Tamil Nadu",
     },
   },
   {
@@ -238,8 +237,8 @@ export const INSTITUTIONS = [
       },
     ],
     contact: {
-      phone: "+91 94876 08775 / +91 94864 19779",
-      email: "polytechnic@ksagroup.edu.in",
+      phone: "8838930110 [Principal], 9894064101 [CEO]",
+      email: "ksaednltrust.poly@gmail.com",
       location: "Kamarajar Polytechnic College Campus, Tamil Nadu",
     },
   },
@@ -252,19 +251,18 @@ export const INSTITUTIONS = [
     tagline:
       "Navigating Global Horizons with Elite Merchant Navy Training & Engineering",
     established: 2008,
-    affiliation: "Indian Maritime University (IMU)",
+    affiliation: "DGS grading",
     accreditation:
-      "Directorate General of Shipping (DGS) Approved | Grade 'A1' Outstanding Rating",
+      "Directorate General of Shipping (DGS) Approved | Grade 'A2' Outstanding Rating",
     description:
       "Kamarajar College of Maritime is an elite merchant navy academy featuring a full-mission Ship Simulator, real engine workshop, swimming pool for sea survival, and a residential naval cadet lifestyle. Preparing officers and marine engineers for international shipping fleets.",
     heroImage: "/college/2.JPG",
     campusImage:
       "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=1200",
     stats: [
-      { label: "Ship Simulator Facility", value: "360° Full Mission" },
       { label: "Global Maritime Placement", value: "96%" },
-      { label: "DGS Grade Rating", value: "A1 Outstanding" },
-      { label: "Sailing Officer Alumni", value: "3,200+" },
+      { label: "DGS Grade Rating", value: "A2 Outstanding" },
+      { label: "Sailing Officer Alumni", value: "200+" },
     ],
     highlights: [
       "Transas 360-Degree Full Mission Bridge & Engine Room Simulator",
@@ -273,7 +271,7 @@ export const INSTITUTIONS = [
       "Strict Cadet Discipline & Officers' Mess Residential Life",
     ],
     dean: {
-      name: "Capt. S. Rajendra Prasad, Master Mariner",
+      name: "(Ch.Engr) Abdul Rasheed, Engineer Superintendent & Principal",
       designation: "Principal & Director of Maritime Studies",
       message:
         "A career in maritime transportation offers unmatched adventure, leadership opportunities, and global financial rewards. We instill rock-solid nautical discipline and modern navigation skills in every cadet.",
@@ -286,7 +284,7 @@ export const INSTITUTIONS = [
         level: "Certificate",
         duration: "6 Months",
         eligibility: "10th Standard with 40% aggregate and 40% in English",
-        intake: 50,
+        intake: 80,
         description:
           "Intensive practical seamanship training preparing deck and engine room ratings for merchant vessels.",
       },
@@ -303,8 +301,8 @@ export const INSTITUTIONS = [
       },
     ],
     contact: {
-      phone: "+91 44 2745 8903 / +91 94876 08775",
-      email: "maritime@ksagroup.edu.in",
+      phone: "9894064101 (CEO) ",
+      email: "ksaednltrust@gmail.com",
       location: "KSA Oceanside Marine Campus, East Coast Road (ECR), TN",
     },
   },

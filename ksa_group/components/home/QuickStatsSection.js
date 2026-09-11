@@ -10,7 +10,7 @@ export default function QuickStatsSection() {
       icon: Award,
     },
     {
-      value: "10,000+",
+      value: "3000+",
       label: "Global Alumni",
       subtitle: "Professionals serving across 30+ countries",
       icon: Users,

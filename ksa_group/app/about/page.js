@@ -24,7 +24,7 @@ export default function AboutPage() {
       desc: "Equivalent qualification recognized under the applicable Pharmacy Council of India and State Government regulations.",
     },
     {
-      year: "2021",
+      year: "2020",
       title: "B.Pharm – Bachelor of Pharmacy",
       desc: "PCI-approved degree program offering comprehensive pharmaceutical education.",
     },
@@ -34,22 +34,22 @@ export default function AboutPage() {
       desc: "Advanced clinical pharmacy program initiated under KSA Educational and Charitable Trust.",
     },
     {
-      year: "2025",
+      year: "2013",
       title: "Diploma in Electrical & Electronics Engg.",
       desc: "Diploma program recognized by competent state and technical education authorities.",
     },
     {
-      year: "2026",
+      year: "2013",
       title: "Diploma in Mechanical Engg.",
       desc: "Comprehensive engineering curriculum preparing students for industry requirements.",
     },
     {
-      year: "2026",
+      year: "2013",
       title: "Diploma in Automobile Engg.",
       desc: "Specialized technical training in modern automotive design and mechanics.",
     },
     {
-      year: "2026",
+      year: "2021",
       title: "Bachelor of Science in Nursing (B.Sc Nursing)",
       desc: "Approved by Tamil Nadu Nurses & Midwives Council (TNNMC) and Indian Nursing Council (INC), New Delhi.",
     },
@@ -71,7 +71,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-slate-300 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed">
             Governing premier constituent colleges in Nursing (Chidambaram),
-            Pharmacy (Cuddalore), Polytechnic Engineering, and Maritime Studies
+            Pharmacy (Chidambaram), Polytechnic Engineering, and Maritime Studies
             with statutory approvals, clinical hospital MoUs, and career
             pathways.
           </p>
