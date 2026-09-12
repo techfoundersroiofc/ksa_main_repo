@@ -128,7 +128,7 @@ export default async function InstitutionDetailPage({ params }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Curriculum & Programs"
-            title="Degree Programs Offered at"
+            title="Courses Offered at"
             highlightTitle={institution.shortName}
             description="Explore course syllabi, duration, intake capacity, and eligibility guidelines."
           />

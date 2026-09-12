@@ -265,7 +265,6 @@ export const INSTITUTIONS = [
       { label: "Sailing Officer Alumni", value: "200+" },
     ],
     highlights: [
-      "Transas 360-Degree Full Mission Bridge & Engine Room Simulator",
       "In-House Engine Workshop & Heavy Marine Machining Lab",
       "STCW 2010 Mandatory Safety & Survival Training Center",
       "Strict Cadet Discipline & Officers' Mess Residential Life",
@@ -283,8 +282,9 @@ export const INSTITUTIONS = [
         name: "General Purpose (GP) Rating",
         level: "Certificate",
         duration: "6 Months",
-        eligibility: "10th Standard with 40% aggregate and 40% in English",
-        intake: 80,
+        eligibility:
+          "Class X pass from government recognized board with subjects English, Maths & Science with 40% aggregate. English 40% in X or XII (or) Pass in 2 Years ITI by DVET/NCVT with 40% & min 40% in English X or XII. Age: 17.5 to 28 on the date of commencement of course. Physical standard: Should be medically fit as per Merchant Shipping rules 2000",
+        intake: 50,
         description:
           "Intensive practical seamanship training preparing deck and engine room ratings for merchant vessels.",
       },
@@ -295,15 +295,27 @@ export const INSTITUTIONS = [
         duration: "11 Days",
         eligibility:
           "10th Standard or equivalent + Medical Fitness Certificate",
-        intake: 40,
+        intake: 24,
         description:
           "Mandatory safety training program for all prospective seafarers, covering PST, FPFF, EFA, and PSSR in accordance with DGS and STCW guidelines.",
+      },
+      {
+        id: "stsdsd",
+        name:
+          "Security Training for Seafarers with Designated Security Duties (STSDSD) 2 Days",
+        level: "Certificate",
+        duration: "2 Days",
+        eligibility:
+          "10th Standard or equivalent + Medical Fitness Certificate",
+        intake: 40,
+        description:
+          "Mandatory 2-day DGS-approved STCW security training program for seafarers designated to perform security duties on merchant vessels.",
       },
     ],
     contact: {
       phone: "9894064101 (CEO) ",
       email: "ksaednltrust@gmail.com",
-      location: "KSA Oceanside Marine Campus, East Coast Road (ECR), TN",
+      location: "Contact : 1069, Thirupaninatham, Keerapalayam, Chidambaram",
     },
   },
 ];

@@ -150,14 +150,6 @@ export default function Footer({ onOpenApplyModal }) {
                   <Award className="w-3.5 h-3.5 text-accent-gold drop-shadow-[0_0_4px_rgba(229,193,88,0.4)]" />{" "}
                   PCI & AICTE
                 </span>
-                <span className="px-3 py-1.5 rounded-xl bg-slate-900/40 backdrop-blur-md border border-white/5 hover:border-accent-gold/40 text-[11px] text-slate-300 font-semibold flex items-center gap-1.5 shadow-md hover:shadow-accent-gold/5 hover:bg-slate-900/80 transition-all duration-300">
-                  <Globe className="w-3.5 h-3.5 text-accent-gold drop-shadow-[0_0_4px_rgba(229,193,88,0.4)]" />{" "}
-                  DGS Grade A1
-                </span>
-                <span className="px-3 py-1.5 rounded-xl bg-slate-900/40 backdrop-blur-md border border-white/5 hover:border-accent-gold/40 text-[11px] text-slate-300 font-semibold flex items-center gap-1.5 shadow-md hover:shadow-accent-gold/5 hover:bg-slate-900/80 transition-all duration-300">
-                  <ShieldCheck className="w-3.5 h-3.5 text-accent-gold drop-shadow-[0_0_4px_rgba(229,193,88,0.4)]" />{" "}
-                  IMU & MGR Univ
-                </span>
               </div>
             </div>
 

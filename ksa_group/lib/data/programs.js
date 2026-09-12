@@ -10,7 +10,8 @@ export const ALL_PROGRAMS = [
     fees: "Contact Admission Office",
     seats: 100,
     rating: "4.9/5",
-    eligibility: "10+2 Science stream with Physics, Chemistry, Biology & English (Min 50%)",
+    eligibility:
+      "10+2 Science stream with Physics, Chemistry, Biology & English (Min 50%)",
     highlights: [
       "INC & TNNMC Approved Syllabus",
       "Digital learning tools & skill labs",
@@ -30,7 +31,8 @@ export const ALL_PROGRAMS = [
     fees: "Contact Admission Office",
     seats: 60,
     rating: "4.8/5",
-    eligibility: "10+2 Science stream with Physics, Chemistry & Biology / Mathematics",
+    eligibility:
+      "10+2 Science stream with Physics, Chemistry & Biology / Mathematics",
     highlights: [
       "Started in 2017 with 60 seats",
       "PCI & TNMGRMU approved",
@@ -50,7 +52,8 @@ export const ALL_PROGRAMS = [
     fees: "Contact Admission Office",
     seats: 60,
     rating: "4.9/5",
-    eligibility: "10+2 Science (Physics, Chemistry, Biology/Maths & English) or D.Pharm for Lateral Entry to 3rd Sem",
+    eligibility:
+      "10+2 Science (Physics, Chemistry, Biology/Maths & English) or D.Pharm for Lateral Entry to 3rd Sem",
     highlights: [
       "Started in 2021 with 60 seats",
       "10 Industry & Hospital MoUs",
@@ -70,7 +73,8 @@ export const ALL_PROGRAMS = [
     fees: "Contact Admission Office",
     seats: 30,
     rating: "5.0/5",
-    eligibility: "10+2 Science (Physics, Chemistry, Biology/Maths - Min 50%) or D.Pharm. Age 17+ years",
+    eligibility:
+      "10+2 Science (Physics, Chemistry, Biology/Maths - Min 50%) or D.Pharm. Age 17+ years",
     highlights: [
       "Started in 2025 with 30 seats",
       "MoU with Govt Cuddalore Medical College Hospital (1,260 beds)",
@@ -190,12 +194,9 @@ export const ALL_PROGRAMS = [
     fees: "₹1,50,000 Total",
     seats: 50,
     rating: "4.8/5",
-    eligibility: "10th Standard with 40% aggregate and 40% in English",
-    highlights: [
-      "DGS Approved Course",
-      "Transas 360° Ship Simulator",
-      "Merchant vessel placement",
-    ],
+    eligibility:
+      "Class X pass from government recognized board with subjects English, Maths & Science with 40% aggregate. English 40% in X or XII (or) Pass in 2 Years ITI by DVET/NCVT with 40% & min 40% in English X or XII. Age: 17.5 to 28 on the date of commencement of course. Physical standard: Should be medically fit as per Merchant Shipping rules 2000",
+    highlights: ["DGS Approved Course", "Merchant vessel placement"],
     overview:
       "Intensive practical seamanship training preparing deck and engine room ratings for merchant vessels.",
   },
@@ -219,5 +220,25 @@ export const ALL_PROGRAMS = [
     overview:
       "Mandatory safety training program for all prospective seafarers, covering PST, FPFF, EFA, and PSSR in accordance with DGS and STCW guidelines.",
   },
+  {
+    id: "stsdsd",
+    title:
+      "Security Training for Seafarers with Designated Security Duties (STSDSD)",
+    collegeId: "maritime",
+    collegeName: "Kamarajar College of Maritime",
+    category: "Maritime",
+    level: "Certificate",
+    duration: "2 Days",
+    fees: "Contact Admission Office",
+    seats: 40,
+    rating: "4.8/5",
+    eligibility: "10th Standard or equivalent + Medical Fitness Certificate",
+    highlights: [
+      "Mandatory DGS approved STCW course",
+      "Designated security duties training",
+      "Essential 2-day certification for seafarers",
+    ],
+    overview:
+      "Mandatory 2-day security training course for seafarers designated to perform security duties onboard merchant vessels in accordance with DGS and STCW guidelines.",
+  },
 ];
-
