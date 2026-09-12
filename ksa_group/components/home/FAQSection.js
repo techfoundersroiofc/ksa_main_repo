@@ -34,7 +34,7 @@ export default function FAQSection() {
                 className={cn(
                   "rounded-2xl border transition-all overflow-hidden",
                   isOpen
-                    ? "bg-slate-50 border-[#D4AF37] shadow-md"
+                    ? "bg-slate-50 border-accent-gold shadow-md"
                     : "bg-white border-slate-200 hover:border-slate-300"
                 )}
               >
@@ -43,13 +43,13 @@ export default function FAQSection() {
                   className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 cursor-pointer"
                 >
                   <span className="font-bold text-base sm:text-lg text-[#0A192F] font-heading flex items-center gap-3">
-                    <HelpCircle className="w-5 h-5 text-[#D4AF37] shrink-0" />
+                    <HelpCircle className="w-5 h-5 text-accent-gold shrink-0" />
                     {faq.question}
                   </span>
                   <ChevronDown
                     className={cn(
                       "w-5 h-5 text-slate-500 transition-transform duration-200 shrink-0",
-                      isOpen && "rotate-180 text-[#D4AF37]"
+                      isOpen && "rotate-180 text-accent-gold"
                     )}
                   />
                 </button>
@@ -67,7 +67,7 @@ export default function FAQSection() {
         <div className="text-center">
           <Link
             href="/faq"
-            className="inline-flex items-center gap-2 text-sm font-bold text-[#0A192F] hover:text-[#D4AF37] transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-bold text-[#0A192F] hover:text-accent-gold transition-colors"
           >
             <span>Have More Questions? Visit Searchable FAQ Page</span>
             <ArrowRight className="w-4 h-4" />
