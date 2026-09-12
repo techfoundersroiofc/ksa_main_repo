@@ -19,12 +19,12 @@ export default function AcademicsPage() {
       : ALL_PROGRAMS.filter((p) => p.level === selectedLevel);
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen pb-20">
+    <div className="bg-surface-alt min-h-screen pb-20">
       
       {/* Header Banner */}
       <div className="bg-[#0A192F] text-white py-16 sm:py-20 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-xs uppercase font-bold text-[#D4AF37] tracking-wider block mb-2">
+          <span className="text-xs uppercase font-bold text-accent-gold tracking-wider block mb-2">
             Academic Excellence & Curriculum
           </span>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl text-white mb-4">
@@ -47,7 +47,7 @@ export default function AcademicsPage() {
               className={cn(
                 "px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer",
                 selectedLevel === lvl
-                  ? "bg-[#0A192F] text-[#D4AF37] shadow-lg"
+                  ? "bg-[#0A192F] text-accent-gold shadow-lg"
                   : "bg-white text-slate-600 hover:bg-slate-200 border border-slate-200"
               )}
             >
