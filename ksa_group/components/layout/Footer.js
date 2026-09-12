@@ -90,14 +90,14 @@ export default function Footer({ onOpenApplyModal }) {
   return (
     <footer className="bg-primary-navy-deep text-slate-300 border-t border-accent-gold/20 pt-16 pb-8 relative overflow-hidden">
       {/* Decorative Premium Grid Overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:20px_20px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-60" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-size-[20px_20px] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-60" />
 
       {/* Background Subtle Ambient Glows */}
       <div
-        className="absolute top-0 right-1/4 w-[450px] h-[450px] bg-accent-gold/5 rounded-full blur-[100px] pointer-events-none animate-pulse"
+        className="absolute top-0 right-1/4 w-112.5 h-112.5 bg-accent-gold/5 rounded-full blur-[100px] pointer-events-none animate-pulse"
         style={{ animationDuration: "8s" }}
       />
-      <div className="absolute bottom-0 left-10 w-[350px] h-[350px] bg-blue-600/5 rounded-full blur-[90px] pointer-events-none" />
+      <div className="absolute bottom-0 left-10 w-87.5 h-87.5 bg-blue-600/5 rounded-full blur-[90px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
@@ -242,7 +242,7 @@ export default function Footer({ onOpenApplyModal }) {
 
           {/* Column 4: Contact Directory (Span 3) - Styled as a premium glassmorphic card */}
           <div className="lg:col-span-3">
-            <div className="relative p-5 rounded-2xl bg-white/[0.02] backdrop-blur-md border border-white/5 hover:border-accent-gold/25 transition-all duration-500 space-y-4 shadow-2xl shadow-black/20 group/card overflow-hidden">
+            <div className="relative p-5 rounded-2xl bg-white/2 backdrop-blur-md border border-white/5 hover:border-accent-gold/25 transition-all duration-500 space-y-4 shadow-2xl shadow-black/20 group/card overflow-hidden">
               {/* Card Ambient Background Glow */}
               <div className="absolute -right-10 -top-10 w-24 h-24 bg-accent-gold/5 rounded-full blur-xl pointer-events-none group-hover/card:bg-accent-gold/10 transition-all duration-500" />
 
@@ -253,8 +253,8 @@ export default function Footer({ onOpenApplyModal }) {
                 <li className="flex items-start gap-2.5">
                   <MapPin className="w-4 h-4 text-accent-gold shrink-0 mt-0.5 drop-shadow-[0_0_3px_rgba(229,193,88,0.25)]" />
                   <span className="leading-relaxed hover:text-slate-300 transition-colors duration-300">
-                    KSA Administrative Headquarters, Knowledge Corridor, South
-                    Chennai, Tamil Nadu - 600126
+                    Ksa Educational And Charitable Trust, 1069, Thirupaninatham,
+                    Keerapalayam, Chidambaram Taluk, Cuddalore Dt-608602
                   </span>
                 </li>
                 <li className="flex items-center gap-2.5">
@@ -263,7 +263,7 @@ export default function Footer({ onOpenApplyModal }) {
                     href="tel:+914427458900"
                     className="hover:text-white transition-colors duration-300"
                   >
-                    +91 44 2745 8900 / 8901
+                    +91-9894064101
                   </a>
                 </li>
                 <li className="flex items-center gap-2.5">
@@ -272,7 +272,7 @@ export default function Footer({ onOpenApplyModal }) {
                     href="mailto:admissions@ksagroup.edu.in"
                     className="hover:text-white transition-colors duration-300"
                   >
-                    admissions@ksagroup.edu.in
+                    Ksaednltrust@gmail.com
                   </a>
                 </li>
               </ul>
@@ -291,8 +291,8 @@ export default function Footer({ onOpenApplyModal }) {
         </div>
 
         {/* Decorative Golden Gradient Divider */}
-        <div className="relative w-full h-px bg-gradient-to-r from-transparent via-slate-800 to-transparent my-8">
-          <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-48 h-[2px] bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent blur-[1px]" />
+        <div className="relative w-full h-px bg-linear-to-r from-transparent via-slate-800 to-transparent my-8">
+          <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-48 h-0.5 bg-linear-to-r from-transparent via-accent-gold/40 to-transparent blur-[1px]" />
         </div>
 
         {/* Bottom Bar & Legal Notice */}

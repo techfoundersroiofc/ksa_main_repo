@@ -11,7 +11,7 @@ export const INSTITUTIONS = [
     accreditation:
       "Approved by Govt. of Tamil Nadu (G.O. Ms. No. 316), TNNMC & Indian Nursing Council (INC)",
     description:
-      "Kamarajar College of Nursing is more than just a place to earn a degree—it’s a place where dreams take shape, confidence is built, and futures are transformed. Located in the peaceful town of Chidambaram, Tamil Nadu, our college is a safe and supportive home for students who are passionate about helping others through the nursing profession.",
+      "Kamarajar College of Nursing is more than just a place to earn a degree it’s a place where dreams take shape, confidence is built, and futures are transformed. Located in the peaceful town of Chidambaram, Tamil Nadu, our college is a safe and supportive home for students who are passionate about helping others through the nursing profession.",
     heroImage: "/college/heroimage1.webp",
     campusImage:
       "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200",
@@ -126,7 +126,8 @@ export const INSTITUTIONS = [
       },
       {
         title: "Clinical Excellence",
-        description: "Collaborative practice with premier government organizations.",
+        description:
+          "Collaborative practice with premier government organizations.",
       },
       {
         title: "24/7 CCTV Surveillance",
@@ -146,7 +147,8 @@ export const INSTITUTIONS = [
       },
       {
         title: "Enrichment Endeavours",
-        description: "Diverse extra-curricular opportunities for holistic development.",
+        description:
+          "Diverse extra-curricular opportunities for holistic development.",
       },
     ],
     committees: [
@@ -209,7 +211,8 @@ export const INSTITUTIONS = [
         "Govt Medical Hospitals",
         "NHS United Kingdom",
       ],
-      averageSalary: "₹3.5 LPA - ₹8.5 LPA (India) | $45,000 - $85,000 / Year (Overseas)",
+      averageSalary:
+        "₹3.5 LPA - ₹8.5 LPA (India) | $45,000 - $85,000 / Year (Overseas)",
     },
     dean: {
       name: "Dr. S. Suganthra Devi, M.Sc(N), Ph.D(N).",
@@ -251,10 +254,10 @@ export const INSTITUTIONS = [
       },
     ],
     contact: {
-      phone: "+91 98940 64101 / +91 99656 50869",
+      phone: "+91-9488178596 (Principal), +91-9894064101 (CEO)",
       email: "ksaednltrust.nursing@gmail.com",
       location:
-        "1069, Thiruppaninatham, Keerapalayam, Chidambaram TK, Cuddalore District – 608 602, Tamil Nadu, India.",
+        "1069, Thirupaninatham, Keerapalayam, Chidambaram Taluk, Cuddalore Dt-608602, Tamil Nadu, India.",
       officeHours: "Mon - Sat: 8:30 AM - 5:00 PM",
     },
   },
@@ -271,7 +274,7 @@ export const INSTITUTIONS = [
     accreditation:
       "2nd Place Awardee in Upcoming Institution Award (TN M.G.R. University Research Day 2025) | 10 Industry & Hospital MoUs",
     description:
-      "Kamarajar College of Pharmacy, Cuddalore, functioning under the KSA Educational and Charitable Trust, is committed to promoting quality education, professional excellence, research, innovation, and community development in the field of pharmacy and healthcare.",
+      "Kamarajar College of Pharmacy, Chidambaram, functioning under the KSA Educational and Charitable Trust, is committed to promoting quality education, professional excellence, research, innovation, and community development in the field of pharmacy and healthcare.",
     heroImage: "/college/Our-Nursing-Students-768x466.webp",
     campusImage:
       "https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?auto=format&fit=crop&q=80&w=1200",
@@ -282,9 +285,10 @@ export const INSTITUTIONS = [
       { label: "Teaching Hospital Beds", value: "1,260 Beds" },
     ],
     about: {
-      heading: "Promoting Professional Excellence, Research & Clinical Exposure",
+      heading:
+        "Promoting Professional Excellence, Research & Clinical Exposure",
       paragraph1:
-        "Kamarajar College of Pharmacy, Cuddalore, functioning under the KSA Educational and Charitable Trust, is committed to promoting quality education, professional excellence, research, innovation, and community development in the field of pharmacy and healthcare. The Trust employs nearly 100 dedicated staff members and has a strong focus on promoting education in the rural sector while nurturing young talent for careers in pharmacy, pharmaceutical sciences, healthcare, research, and personalized medicine.",
+        "Kamarajar College of Pharmacy, Chidambaram, functioning under the KSA Educational and Charitable Trust, is committed to promoting quality education, professional excellence, research, innovation, and community development in the field of pharmacy and healthcare. The Trust employs nearly 100 dedicated staff members and has a strong focus on promoting education in the rural sector while nurturing young talent for careers in pharmacy, pharmaceutical sciences, healthcare, research, and personalized medicine.",
       paragraph2:
         "The College is dedicated to the holistic development of students, giving importance to both their personal and professional growth. Through academic education, practical training, clinical exposure, research activities, outreach programmes, and industry and hospital collaborations, the institution strives to prepare students to meet the evolving needs of the healthcare sector.",
       keyBadges: [
@@ -296,7 +300,7 @@ export const INSTITUTIONS = [
     },
     highlights: [
       "Conferred 2nd Place in Upcoming Institution Award among Pharmacy Colleges (TN M.G.R. University Research Day 2025)",
-      "MoU with Govt Cuddalore Medical College Hospital (1,260-bed tertiary care teaching hospital) for Pharm.D Clinical Residency",
+      "MoU with Govt Chidambaram Medical College Hospital (1,260-bed tertiary care teaching hospital) for Pharm.D Clinical Residency",
       "10 Memoranda of Understanding (MoUs) with pharmaceutical industries & hospitals for internships, R&D, and placements",
       "Specialized laboratories in Pharmaceutics, Pharmacology, Pharmaceutical Chemistry, Pharmacognosy, Analysis & Biotechnology",
     ],
@@ -347,9 +351,9 @@ export const INSTITUTIONS = [
           "1. Passed 10+2 with English and Physics, Chemistry, Mathematics (PCM) and/or Biology (PCB/PCMB) individually. 2. Minimum 50% aggregate in PCM/PCB. 3. Age: Completion of 17 years on or before 31st December of admission year.",
         intake: 30,
         description:
-          "Introduced in 2025 with 30 approved seats. Clinical doctorate integrating hospital pharmacy, clinical toxicology, pharmacotherapeutics, and 1-year hands-on internship at Government Cuddalore Medical College Hospital (1,260 beds).",
+          "Introduced in 2025 with 30 approved seats. Clinical doctorate integrating hospital pharmacy, clinical toxicology, pharmacotherapeutics, and 1-year hands-on internship at Government Chidambaram Medical College Hospital (1,260 beds).",
         highlights: [
-          "MoU with Govt Cuddalore Medical College Hospital (1,260 beds)",
+          "MoU with Govt Chidambaram Medical College Hospital (1,260 beds)",
           "1-Year full clinical residency internship",
           "Ward rounds & drug monitoring",
         ],
@@ -405,42 +409,198 @@ export const INSTITUTIONS = [
         "Cipla",
         "Biocon",
         "Apollo Pharmacy",
-        "Govt Cuddalore Medical College Hospital",
+        "Govt Chidambaram Medical College Hospital",
       ],
-      averageSalary: "₹3.8 LPA - ₹9.0 LPA (Domestic) | ₹12+ LPA (R&D / Overseas)",
+      averageSalary:
+        "₹3.8 LPA - ₹9.0 LPA (Domestic) | ₹12+ LPA (R&D / Overseas)",
     },
     facultyList: [
-      { id: 1, name: "Dr. G. Geetha", qualification: "M.Pharm., Ph.D", designation: "Principal" },
-      { id: 2, name: "Mrs. R. Sudha", qualification: "M.Pharm., Ph.D", designation: "Vice Principal / Associate Professor" },
-      { id: 3, name: "Dr. K. K. Sivakumar", qualification: "M.Pharm., Ph.D", designation: "Head of Department (Pharmaceutical Chemistry)" },
-      { id: 4, name: "Dr. V. K. Kalaichelvan", qualification: "M.Pharm., Ph.D", designation: "Head of Department (Pharmacology)" },
-      { id: 5, name: "Dr. A. Sriram", qualification: "M.Pharm., Ph.D", designation: "Head of Department (Pharmacy Practice)" },
-      { id: 6, name: "Mrs. K. Arulselvi", qualification: "M.Pharm", designation: "Associate Professor" },
-      { id: 7, name: "Mrs. V. G. Akilandeswari", qualification: "M.Pharm", designation: "Associate Professor" },
-      { id: 8, name: "Mrs. A. Abinaya", qualification: "M.Pharm", designation: "Associate Professor" },
-      { id: 9, name: "Mrs. B. Siva Ranjani", qualification: "M.Pharm", designation: "Associate Professor" },
-      { id: 10, name: "Mr. T. Hariharan", qualification: "M.Pharm", designation: "Assistant Professor" },
-      { id: 11, name: "Dr. R. Gomathi", qualification: "Pharm.D", designation: "Assistant Professor" },
-      { id: 12, name: "Mr. A. Bharathi Raja", qualification: "M.Pharm", designation: "Assistant Professor" },
-      { id: 13, name: "Dr. I. Shangeerthanasri", qualification: "Pharm.D", designation: "Assistant Professor" },
-      { id: 14, name: "Mrs. S. Akalya", qualification: "M.Pharm", designation: "Assistant Professor" },
-      { id: 15, name: "Mr. J. R. Chandra Prakash", qualification: "M.Pharm", designation: "Assistant Professor" },
-      { id: 16, name: "Mrs. M. Saranya", qualification: "M.Pharm", designation: "Assistant Professor" },
-      { id: 17, name: "Mrs. B. Nanthini", qualification: "M.Pharm", designation: "Assistant Professor" },
-      { id: 18, name: "Mr. D. Palanivel", qualification: "B.Pharm", designation: "Lecturer" },
-      { id: 19, name: "Mrs. P. Tamizhazhahi", qualification: "B.Pharm", designation: "Lecturer" },
-      { id: 20, name: "Mrs. J. Hilma Dora", qualification: "B.Pharm", designation: "Lecturer" },
-      { id: 21, name: "Dr. M. Krishnaveni", qualification: "M.Phil., Ph.D", designation: "Lecturer" },
-      { id: 22, name: "Mrs. A. Sivaranjani", qualification: "M.Sc., M.Phil", designation: "Lecturer" },
-      { id: 23, name: "Mrs. S. Maheswari", qualification: "B.Pharm", designation: "Lab Technician" },
-      { id: 24, name: "Ms. R. Theivani", qualification: "D.Pharm", designation: "Lab Technician" },
-      { id: 25, name: "Ms. M. Abina", qualification: "D.Pharm", designation: "Lab Technician" },
-      { id: 26, name: "Ms. S. Kanimozhi", qualification: "D.Pharm", designation: "Lab Technician" },
-      { id: 27, name: "Ms. P. Janani", qualification: "D.Pharm", designation: "Lab Technician" },
-      { id: 28, name: "Ms. S. Mary George Pradhisha", qualification: "B.Pharm", designation: "Lab Technician" },
-      { id: 29, name: "Mrs. T. Jayapriya", qualification: "MLIS", designation: "Librarian" },
-      { id: 30, name: "Mrs. D. Akila", qualification: "M.Sc", designation: "Office Administration" },
-      { id: 31, name: "Mrs. N. Anantha Lakshmi", qualification: "B.Sc", designation: "Office Administration" },
+      {
+        id: 1,
+        name: "Dr. G. Geetha",
+        qualification: "M.Pharm., Ph.D",
+        designation: "Principal",
+      },
+      {
+        id: 2,
+        name: "Mrs. R. Sudha",
+        qualification: "M.Pharm., Ph.D",
+        designation: "Vice Principal / Associate Professor",
+      },
+      {
+        id: 3,
+        name: "Dr. K. K. Sivakumar",
+        qualification: "M.Pharm., Ph.D",
+        designation: "Head of Department (Pharmaceutical Chemistry)",
+      },
+      {
+        id: 4,
+        name: "Dr. V. K. Kalaichelvan",
+        qualification: "M.Pharm., Ph.D",
+        designation: "Head of Department (Pharmacology)",
+      },
+      {
+        id: 5,
+        name: "Dr. A. Sriram",
+        qualification: "M.Pharm., Ph.D",
+        designation: "Head of Department (Pharmacy Practice)",
+      },
+      {
+        id: 6,
+        name: "Mrs. K. Arulselvi",
+        qualification: "M.Pharm",
+        designation: "Associate Professor",
+      },
+      {
+        id: 7,
+        name: "Mrs. V. G. Akilandeswari",
+        qualification: "M.Pharm",
+        designation: "Associate Professor",
+      },
+      {
+        id: 8,
+        name: "Mrs. A. Abinaya",
+        qualification: "M.Pharm",
+        designation: "Associate Professor",
+      },
+      {
+        id: 9,
+        name: "Mrs. B. Siva Ranjani",
+        qualification: "M.Pharm",
+        designation: "Associate Professor",
+      },
+      {
+        id: 10,
+        name: "Mr. T. Hariharan",
+        qualification: "M.Pharm",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 11,
+        name: "Dr. R. Gomathi",
+        qualification: "Pharm.D",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 12,
+        name: "Mr. A. Bharathi Raja",
+        qualification: "M.Pharm",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 13,
+        name: "Dr. I. Shangeerthanasri",
+        qualification: "Pharm.D",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 14,
+        name: "Mrs. S. Akalya",
+        qualification: "M.Pharm",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 15,
+        name: "Mr. J. R. Chandra Prakash",
+        qualification: "M.Pharm",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 16,
+        name: "Mrs. M. Saranya",
+        qualification: "M.Pharm",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 17,
+        name: "Mrs. B. Nanthini",
+        qualification: "M.Pharm",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 18,
+        name: "Mr. D. Palanivel",
+        qualification: "B.Pharm",
+        designation: "Lecturer",
+      },
+      {
+        id: 19,
+        name: "Mrs. P. Tamizhazhahi",
+        qualification: "B.Pharm",
+        designation: "Lecturer",
+      },
+      {
+        id: 20,
+        name: "Mrs. J. Hilma Dora",
+        qualification: "B.Pharm",
+        designation: "Lecturer",
+      },
+      {
+        id: 21,
+        name: "Dr. M. Krishnaveni",
+        qualification: "M.Phil., Ph.D",
+        designation: "Lecturer",
+      },
+      {
+        id: 22,
+        name: "Mrs. A. Sivaranjani",
+        qualification: "M.Sc., M.Phil",
+        designation: "Lecturer",
+      },
+      {
+        id: 23,
+        name: "Mrs. S. Maheswari",
+        qualification: "B.Pharm",
+        designation: "Lab Technician",
+      },
+      {
+        id: 24,
+        name: "Ms. R. Theivani",
+        qualification: "D.Pharm",
+        designation: "Lab Technician",
+      },
+      {
+        id: 25,
+        name: "Ms. M. Abina",
+        qualification: "D.Pharm",
+        designation: "Lab Technician",
+      },
+      {
+        id: 26,
+        name: "Ms. S. Kanimozhi",
+        qualification: "D.Pharm",
+        designation: "Lab Technician",
+      },
+      {
+        id: 27,
+        name: "Ms. P. Janani",
+        qualification: "D.Pharm",
+        designation: "Lab Technician",
+      },
+      {
+        id: 28,
+        name: "Ms. S. Mary George Pradhisha",
+        qualification: "B.Pharm",
+        designation: "Lab Technician",
+      },
+      {
+        id: 29,
+        name: "Mrs. T. Jayapriya",
+        qualification: "MLIS",
+        designation: "Librarian",
+      },
+      {
+        id: 30,
+        name: "Mrs. D. Akila",
+        qualification: "M.Sc",
+        designation: "Office Administration",
+      },
+      {
+        id: 31,
+        name: "Mrs. N. Anantha Lakshmi",
+        qualification: "B.Sc",
+        designation: "Office Administration",
+      },
     ],
     dean: {
       name: "Dr. G. Geetha, M.Pharm., Ph.D.",
@@ -481,9 +641,10 @@ export const INSTITUTIONS = [
       },
     ],
     contact: {
-      phone: "9487608775 (CEO) / 9486419779 (Principal) / 8778274072 (Vice Principal & Admission Committee)",
+      phone: "+91-9486419779 (Principal) , +91-9894064101 (CEO)",
       email: "ksaednltrust.pharma@gmail.com",
-      location: "KSA Campus, Chidambaram, Cuddalore District, Tamil Nadu - 608001",
+      location:
+        "1069, Thirupaninatham, Keerapalayam, Chidambaram Taluk, Cuddalore Dt-608602, Tamil Nadu, India.",
       officeHours: "Mon - Sat: 8:30 AM - 5:00 PM",
     },
   },
@@ -603,7 +764,8 @@ export const INSTITUTIONS = [
         "Bosch India",
         "Siemens",
       ],
-      averageSalary: "Attractive Salary Packages + Free Higher Education (B.E./B.Tech) Sponsorship",
+      averageSalary:
+        "Attractive Salary Packages + Free Higher Education (B.E./B.Tech) Sponsorship",
     },
     dean: {
       name: "Er. Vimalan L, M.Tech.",
@@ -616,16 +778,66 @@ export const INSTITUTIONS = [
       avatar: "/principal/Poly.jpeg",
     },
     facultyList: [
-      { sno: 1, name: "Er. Vimalan L", qualification: "M.Tech.", designation: "Principal" },
-      { sno: 2, name: "Mr. Thanigainathan R", qualification: "M.Sc., M.Phil.", designation: "Lecturer" },
-      { sno: 3, name: "Mr. Prabu E", qualification: "M.A., B.Ed.", designation: "Lecturer" },
-      { sno: 4, name: "Mr. Senthil Kumar P", qualification: "B.E. (MECH)", designation: "Lecturer" },
-      { sno: 5, name: "Mr. Raj Nirmal R", qualification: "B.E. (EEE)", designation: "HOD / EEE" },
-      { sno: 6, name: "Mr. Veeraragavan K", qualification: "B.E. / B.Tech", designation: "HOD / Basic Engineering" },
-      { sno: 7, name: "Mr. Nagarajan P", qualification: "MCA", designation: "Lecturer" },
-      { sno: 8, name: "Mrs. Nithya M S", qualification: "M.E. CIVIL", designation: "HOD / DAE (Automobile)" },
-      { sno: 9, name: "Mrs. Sharmila Banu N", qualification: "B.E. ECE", designation: "Lecturer" },
-      { sno: 10, name: "Mr. Elayaraja P", qualification: "PET", designation: "Physical Education Trainer" },
+      {
+        sno: 1,
+        name: "Er. Vimalan L",
+        qualification: "M.Tech.",
+        designation: "Principal",
+      },
+      {
+        sno: 2,
+        name: "Mr. Thanigainathan R",
+        qualification: "M.Sc., M.Phil.",
+        designation: "Lecturer",
+      },
+      {
+        sno: 3,
+        name: "Mr. Prabu E",
+        qualification: "M.A., B.Ed.",
+        designation: "Lecturer",
+      },
+      {
+        sno: 4,
+        name: "Mr. Senthil Kumar P",
+        qualification: "B.E. (MECH)",
+        designation: "Lecturer",
+      },
+      {
+        sno: 5,
+        name: "Mr. Raj Nirmal R",
+        qualification: "B.E. (EEE)",
+        designation: "HOD / EEE",
+      },
+      {
+        sno: 6,
+        name: "Mr. Veeraragavan K",
+        qualification: "B.E. / B.Tech",
+        designation: "HOD / Basic Engineering",
+      },
+      {
+        sno: 7,
+        name: "Mr. Nagarajan P",
+        qualification: "MCA",
+        designation: "Lecturer",
+      },
+      {
+        sno: 8,
+        name: "Mrs. Nithya M S",
+        qualification: "M.E. CIVIL",
+        designation: "HOD / DAE (Automobile)",
+      },
+      {
+        sno: 9,
+        name: "Mrs. Sharmila Banu N",
+        qualification: "B.E. ECE",
+        designation: "Lecturer",
+      },
+      {
+        sno: 10,
+        name: "Mr. Elayaraja P",
+        qualification: "PET",
+        designation: "Physical Education Trainer",
+      },
     ],
     facilities: [
       {
@@ -658,7 +870,8 @@ export const INSTITUTIONS = [
     contact: {
       phone: "8838930110 (Principal) / 9894064101 (CEO)",
       email: "ksaednltrust.poly@gmail.com",
-      location: "Kamarajar Polytechnic College Campus, Keerapalayam, Chidambaram, Tamil Nadu",
+      location:
+        "1069, Thirupaninatham, Keerapalayam, Chidambaram Taluk, Cuddalore Dt-608602, Tamil Nadu, India.",
       officeHours: "Mon - Sat: 8:30 AM - 5:00 PM",
     },
   },
@@ -666,7 +879,7 @@ export const INSTITUTIONS = [
     id: "maritime",
     slug: "kamarajar-college-of-maritime",
     name: "Kamarajar College of Maritime",
-    shortName: "KCM",
+    shortName: "PKIMSE",
     category: "Maritime",
     tagline:
       "Navigating Global Horizons with Elite Merchant Navy Training & Engineering",
@@ -715,7 +928,7 @@ export const INSTITUTIONS = [
         duration: "6 Months",
         eligibility:
           "Class X pass from government recognized board with subjects English, Maths & Science with 40% aggregate. English 40% in X or XII (or) Pass in 2 Years ITI by DVET/NCVT with 40% & min 40% in English X or XII. Age: 17.5 to 28 on the date of commencement of course. Physical standard: Should be medically fit as per Merchant Shipping rules 2000",
-        intake: 50,
+        intake: 80,
         description:
           "Intensive practical seamanship training preparing deck and engine room ratings for merchant vessels.",
       },
@@ -732,8 +945,7 @@ export const INSTITUTIONS = [
       },
       {
         id: "stsdsd",
-        name:
-          "Security Training for Seafarers with Designated Security Duties (STSDSD) 2 Days",
+        name: "Security Training for Seafarers with Designated Security Duties (STSDSD) 2 Days",
         level: "Certificate",
         duration: "2 Days",
         eligibility:
@@ -763,13 +975,15 @@ export const INSTITUTIONS = [
         "MSC Shipmanagement",
         "V.Ships",
       ],
-      averageSalary: "$800 - $2,500 / Month (Starting Deck/Engine) -> $5,000+ / Month (Senior Officer)",
+      averageSalary:
+        "$800 - $2,500 / Month (Starting Deck/Engine) -> $5,000+ / Month (Senior Officer)",
     },
     dean: {
       name: "(Ch.Engr) Abdul Rasheed",
-      title: "Principal & Director of Maritime Studies",
+      title: "Principal of Maritime Studies",
       designation: "Principal & Engineer Superintendent",
-      qualification: "Chief Engineer (DOT Class 1 Motor), Marine Superintendent",
+      qualification:
+        "Chief Engineer (DOT Class 1 Motor), Marine Superintendent",
       experience: "25+ Years at Sea & Maritime Academy Leadership",
       message:
         "A career in maritime transportation offers unmatched adventure, leadership opportunities, and global financial rewards. We instill rock-solid nautical discipline and modern navigation skills in every cadet.",
@@ -806,7 +1020,8 @@ export const INSTITUTIONS = [
     contact: {
       phone: "9894064101 (CEO / Admission Office)",
       email: "ksaednltrust@gmail.com",
-      location: "Contact: 1069, Thirupaninatham, Keerapalayam, Chidambaram, Tamil Nadu - 608602",
+      location:
+        "1069, Thirupaninatham, Keerapalayam, Chidambaram Taluk, Cuddalore Dt-608602, Tamil Nadu, India.",
       officeHours: "Mon - Sat: 8:00 AM - 5:30 PM",
     },
   },

@@ -439,7 +439,7 @@ export default function Navbar({ onOpenApplyModal }) {
           <div className="hidden lg:flex items-center gap-2 shrink-0">
             <button
               onClick={onOpenApplyModal}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-accent-gold via-[#E5C158] to-[#B8902A] text-[#0A192F] font-bold text-xs xl:text-sm shadow-lg hover:brightness-110 active:scale-95 transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white whitespace-nowrap"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-linear-to-r from-accent-gold via-[#E5C158] to-[#B8902A] text-[#0A192F] font-bold text-xs xl:text-sm shadow-lg hover:brightness-110 active:scale-95 transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white whitespace-nowrap"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#0A192F]" />
               Apply Now
@@ -450,7 +450,7 @@ export default function Navbar({ onOpenApplyModal }) {
           <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={onOpenApplyModal}
-              className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-accent-gold to-[#B8902A] text-[#0A192F] text-xs font-bold shadow-md active:scale-95 transition-transform"
+              className="px-3.5 py-2 rounded-xl bg-linear-to-r from-accent-gold to-[#B8902A] text-[#0A192F] text-xs font-bold shadow-md active:scale-95 transition-transform"
             >
               Apply
             </button>
@@ -475,7 +475,7 @@ export default function Navbar({ onOpenApplyModal }) {
         <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 bg-primary-navy-deep/98 backdrop-blur-2xl border-t border-slate-800 shadow-2xl z-50 flex flex-col justify-between overflow-y-auto animate-in slide-in-from-top duration-300">
           <div className="p-4 sm:p-5 flex flex-col gap-4 pb-10">
             {/* Quick Action Banner Header inside Mobile Drawer */}
-            <div className="flex items-center justify-between p-3 rounded-2xl bg-gradient-to-r from-accent-gold/15 to-transparent border border-accent-gold/30">
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-linear-to-r from-accent-gold/15 to-transparent border border-accent-gold/30">
               <div className="flex items-center gap-2.5">
                 <div className="p-2 rounded-xl bg-accent-gold text-primary-navy">
                   <GraduationCap className="w-4 h-4" />
@@ -576,7 +576,7 @@ export default function Navbar({ onOpenApplyModal }) {
                   setMobileMenuOpen(false);
                   onOpenApplyModal();
                 }}
-                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-accent-gold via-[#E5C158] to-[#B8902A] text-[#0A192F] font-bold text-center shadow-xl text-sm flex items-center justify-center gap-2 active:scale-95 transition-transform"
+                className="w-full py-3.5 rounded-xl bg-linear-to-r from-accent-gold via-[#E5C158] to-[#B8902A] text-[#0A192F] font-bold text-center shadow-xl text-sm flex items-center justify-center gap-2 active:scale-95 transition-transform"
               >
                 <Sparkles className="w-4 h-4 text-[#0A192F]" /> Start Admission
                 Inquiry

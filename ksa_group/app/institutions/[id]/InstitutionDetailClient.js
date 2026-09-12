@@ -38,7 +38,7 @@ export default function InstitutionDetailClient({ institution }) {
         (f) =>
           f.name.toLowerCase().includes(facultySearch.toLowerCase()) ||
           f.designation.toLowerCase().includes(facultySearch.toLowerCase()) ||
-          f.qualification.toLowerCase().includes(facultySearch.toLowerCase())
+          f.qualification.toLowerCase().includes(facultySearch.toLowerCase()),
       )
     : [];
 
@@ -689,7 +689,8 @@ export default function InstitutionDetailClient({ institution }) {
                 />
               </div>
               <span className="text-xs text-slate-500 font-semibold">
-                Showing {filteredFaculty.length} of {institution.facultyList.length} Staff Members
+                Showing {filteredFaculty.length} of{" "}
+                {institution.facultyList.length} Staff Members
               </span>
             </div>
 
@@ -730,8 +731,8 @@ export default function InstitutionDetailClient({ institution }) {
                                 fac.designation.includes("HOD")
                                 ? "bg-[#0A192F] text-accent-gold"
                                 : fac.designation.includes("Professor")
-                                ? "bg-slate-100 text-slate-800 border border-slate-200"
-                                : "bg-slate-50 text-slate-600 border border-slate-100"
+                                  ? "bg-slate-100 text-slate-800 border border-slate-200"
+                                  : "bg-slate-50 text-slate-600 border border-slate-100",
                             )}
                           >
                             {fac.designation}
