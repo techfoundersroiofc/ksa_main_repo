@@ -928,7 +928,7 @@ export const INSTITUTIONS = [
         duration: "6 Months",
         eligibility:
           "Class X pass from government recognized board with subjects English, Maths & Science with 40% aggregate. English 40% in X or XII (or) Pass in 2 Years ITI by DVET/NCVT with 40% & min 40% in English X or XII. Age: 17.5 to 28 on the date of commencement of course. Physical standard: Should be medically fit as per Merchant Shipping rules 2000",
-        intake: 80,
+        intake: 40,
         description:
           "Intensive practical seamanship training preparing deck and engine room ratings for merchant vessels.",
       },
