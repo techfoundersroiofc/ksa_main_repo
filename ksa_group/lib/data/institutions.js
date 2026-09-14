@@ -2,8 +2,8 @@ export const INSTITUTIONS = [
   {
     id: "nursing",
     slug: "kamarajar-college-of-nursing",
-    name: "Kamarajar College of Nursing",
-    shortName: "KCN",
+    name: "KAMARAJAR COLLEGE OF NURSING",
+    shortName: "KAMARAJAR COLLEGE  OF NURSING",
     category: "Nursing",
     tagline: "Shaping Compassionate Caregivers, One Student at a Time",
     established: 2021,
@@ -14,7 +14,7 @@ export const INSTITUTIONS = [
       "Kamarajar College of Nursing is more than just a place to earn a degree it’s a place where dreams take shape, confidence is built, and futures are transformed. Located in the peaceful town of Chidambaram, Tamil Nadu, our college is a safe and supportive home for students who are passionate about helping others through the nursing profession.",
     heroImage: "/college/heroimage1.webp",
     campusImage:
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200",
+      "/college/Building-the-Future-of-Nursing-with-Integrity-and-Purpose.webp",
     stats: [
       { label: "Established Under Trust", value: "2021" },
       { label: "Statutory Approvals", value: "INC & TNNMC" },
@@ -30,7 +30,7 @@ export const INSTITUTIONS = [
       keyBadges: [
         "Govt. of Tamil Nadu Approved",
         "INC & TNNMC Registered",
-        "TN M.G.R. University Affiliated",
+        "The TamilNadu M.G.R. University Affiliated",
         "100% Campus Placement Rate",
       ],
     },
@@ -179,8 +179,7 @@ export const INSTITUTIONS = [
         name: "B.Sc Nursing",
         level: "Undergraduate",
         duration: "4 Years",
-        eligibility:
-          "10+2 with Physics, Chemistry, Biology & English (Min 50%) recognized by INC & State Nursing Council",
+        eligibility: "HSC / 10+2 with Physics, Chemistry, Biology & English",
         intake: 60,
         description:
           "A foundational healthcare degree producing skilled, empathetic, and professional nurses for clinical settings, hospitals, and community care globally.",
@@ -196,7 +195,10 @@ export const INSTITUTIONS = [
       description:
         "Nursing is one of the most resilient, high-demand healthcare professions worldwide. Graduates of Kamarajar College of Nursing gain intensive clinical rotation experience that prepares them for immediate employment in government hospitals, private multispecialty chains, military nursing, and international healthcare systems (NHS UK, USA, Gulf countries).",
       roles: [
-        "Registered Clinical Nurse",
+        "Industrial Nurse",
+        "Nurse Practitioner",
+        "Nursing Officer",
+        "School Health Nurse",
         "ICU & Critical Care Specialist",
         "Nurse Educator / Clinical Instructor",
         "Healthcare Administrator",
@@ -208,7 +210,8 @@ export const INSTITUTIONS = [
         "Fortis Healthcare",
         "MIOT International",
         "Kauvery Hospital",
-        "Govt Medical Hospitals",
+        "SRMC",
+        "Chettinadu Hospital",
         "NHS United Kingdom",
       ],
       averageSalary:
@@ -220,9 +223,9 @@ export const INSTITUTIONS = [
       subtitle: "Nurturing Brilliance with Vision, Compassion, and Innovation",
       designation: "Principal, Kamarajar College of Nursing",
       qualification: "M.Sc Nursing, Ph.D in Nursing",
-      experience: "18+ Years in Clinical & Academic Leadership",
+      experience: "24+ Years in Clinical & Academic Leadership",
       message:
-        "It is with immense pride and unwavering dedication that I welcome you to Kamarajar College of Nursing, a centre of excellence where academic brilliance and compassionate care converge to shape the healthcare leaders of tomorrow. As Principal, my commitment is deeply rooted in empowering both students and faculty to realize their fullest potential through visionary leadership, innovative thinking, and a profound sense of empathy.\n\nAt the helm of this institution, I recognize that the essence of nursing education extends beyond academic proficiency—it is about cultivating a profound understanding of humanity and equipping caregivers to embody the noble virtues of compassion, integrity, and empathy. Through meticulously curated programs and immersive learning experiences, we nurture healthcare professionals who excel both in technical expertise and in the art of caregiving.\n\nUnder my leadership, faculty development remains a cornerstone of our mission. I firmly believe that a robust and inspired faculty is instrumental in fostering transformative learning environments. Through comprehensive skill enhancement initiatives, advanced research opportunities, and cross-disciplinary collaboration, we ensure that our educators remain at the forefront of academic innovation and are empowered to inspire excellence in every student.\n\nAs an innovative thinker, my vision is to continually advance the frontiers of nursing education, integrating cutting-edge technology and pioneering methodologies to prepare our students for the challenges of a dynamic healthcare landscape. From state-of-the-art skill laboratories to global research initiatives, our institution is dedicated to delivering an education that is both contemporary and transformative.\n\nHolistic development is the hallmark of Kamarajar College of Nursing. We offer a nurturing environment where individuality is celebrated and personal growth is paramount. Through our initiatives in leadership development, extracurricular enrichment, and community engagement, we cultivate well-rounded professionals who radiate brilliance both within and beyond the healthcare sector.\n\nAs we journey forward, guided by our motto 'Arise and Shine, Radiate Brilliance,' I extend my heartfelt gratitude to our students, faculty, and stakeholders for their trust and unwavering support. Together, let us continue to redefine the paradigms of nursing education and inspire a brighter, healthier future for all.",
+        "Welcome to Kamarajar College of Nursing, a center of excellence where academic brilliance and compassionate care converge. Our mission is to shape future healthcare leaders by combining rigorous clinical training with deep empathy and ethical integrity.\n\nThrough state-of-the-art skill laboratories, innovative teaching methodologies, and continuous faculty development, we empower our students to excel in a dynamic global healthcare landscape.\n\nGuided by our motto 'Arise and Shine, Radiate Brilliance,' we nurture holistic growth, leadership, and clinical excellence—preparing caregivers to inspire a healthier tomorrow.",
       avatar: "/principal/Nursing.jpeg",
     },
     facilities: [
@@ -276,8 +279,7 @@ export const INSTITUTIONS = [
     description:
       "Kamarajar College of Pharmacy, Chidambaram, functioning under the KSA Educational and Charitable Trust, is committed to promoting quality education, professional excellence, research, innovation, and community development in the field of pharmacy and healthcare.",
     heroImage: "/college/Our-Nursing-Students-768x466.webp",
-    campusImage:
-      "https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?auto=format&fit=crop&q=80&w=1200",
+    campusImage: "/college/DJI_0542.webp",
     stats: [
       { label: "Dedicated Staff", value: "100+" },
       { label: "University Research Rank", value: "2nd Place" },
@@ -664,8 +666,7 @@ export const INSTITUTIONS = [
     description:
       "Kamarajar Polytechnic College (KPC), established in 2015 in Keerapalayam, Chidambaram, delivers industry-aligned diploma engineering programs. KPC features advanced engineering laboratories, high-speed computer & internet centers, green campus environment with sports grounds, and dedicated hostel & canteen facilities. With an annual fee of ₹40,000 and generous scholarships up to ₹37,500 per year, KPC prepares diploma engineers for top MNC placements offering attractive salaries and sponsored higher education.",
     heroImage: "/college/collegeabout.png",
-    campusImage:
-      "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&q=80&w=1200",
+    campusImage: "/college/7.jpeg",
     stats: [
       { label: "Annual Course Fee", value: "₹40,000" },
       { label: "Annual Scholarship", value: "₹37,500" },
@@ -878,7 +879,7 @@ export const INSTITUTIONS = [
   {
     id: "maritime",
     slug: "kamarajar-college-of-maritime",
-    name: "Kamarajar College of Maritime",
+    name: "Perunthalaivar Kamarajar Institute of Maritime Science and Engineering",
     shortName: "PKIMSE",
     category: "Maritime",
     tagline:
@@ -886,12 +887,11 @@ export const INSTITUTIONS = [
     established: 2008,
     affiliation: "DGS grading",
     accreditation:
-      "Directorate General of Shipping (DGS) Approved | Grade 'A2' Outstanding Rating",
+      "Change to Directorate General of Maritime Administration (DGMA) Approved",
     description:
       "Kamarajar College of Maritime is an elite merchant navy academy featuring a full-mission Ship Simulator, real engine workshop, swimming pool for sea survival, and a residential naval cadet lifestyle. Preparing officers and marine engineers for international shipping fleets.",
     heroImage: "/college/2.JPG",
-    campusImage:
-      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=1200",
+    campusImage: "/faclities/4.jpg",
     stats: [
       { label: "Global Maritime Placement", value: "96%" },
       { label: "DGS Grade Rating", value: "A2 Outstanding" },
@@ -950,7 +950,7 @@ export const INSTITUTIONS = [
         duration: "2 Days",
         eligibility:
           "10th Standard or equivalent + Medical Fitness Certificate",
-        intake: 40,
+        intake: 24,
         description:
           "Mandatory 2-day DGS-approved STCW security training program for seafarers designated to perform security duties on merchant vessels.",
       },
@@ -976,15 +976,14 @@ export const INSTITUTIONS = [
         "V.Ships",
       ],
       averageSalary:
-        "$800 - $2,500 / Month (Starting Deck/Engine) -> $5,000+ / Month (Senior Officer)",
+        "$ 200-500/ per month Trainee time $500-1000 per month after COP $800 -1000 per month Trainee officer",
     },
     dean: {
-      name: "(Ch.Engr) Abdul Rasheed",
+      name: "Ch.Engr -  Abdul Rasheed",
       title: "Principal of Maritime Studies",
       designation: "Principal & Engineer Superintendent",
-      qualification:
-        "Chief Engineer (DOT Class 1 Motor), Marine Superintendent",
-      experience: "25+ Years at Sea & Maritime Academy Leadership",
+      qualification: "Chief Engineer (DGS Class 1 Motor)",
+      experience: "15+ Years at Sea & 4+ years Maritime Academy Leadership",
       message:
         "A career in maritime transportation offers unmatched adventure, leadership opportunities, and global financial rewards. We instill rock-solid nautical discipline and modern navigation skills in every cadet.",
       avatar: "/college/0M5A7948.JPG",

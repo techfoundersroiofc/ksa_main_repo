@@ -597,7 +597,7 @@ export default function InstitutionDetailClient({ institution }) {
             <SectionHeader
               badge="Institutional Leadership"
               title="Message from Principal &"
-              highlightTitle="HOD"
+              highlightTitle="Course In Charge"
               description="Dedicated academic leadership inspiring excellence, discipline, and compassionate service."
             />
 
@@ -758,7 +758,7 @@ export default function InstitutionDetailClient({ institution }) {
             <SectionHeader
               badge="Campus Infrastructure"
               title="Specialized Campus Facilities &"
-              highlightTitle="Labs"
+              highlightTitle="Advanced Skill labs"
               description={`Modern labs, simulators, and practical infrastructure dedicated to ${institution.shortName} students.`}
             />
 
@@ -820,7 +820,7 @@ export default function InstitutionDetailClient({ institution }) {
         <div className="p-8 sm:p-12 rounded-3xl bg-[#0A192F] text-white flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl border border-slate-800">
           <div className="space-y-3 max-w-2xl">
             <span className="text-xs uppercase font-extrabold text-accent-gold tracking-widest block">
-              Admission Directory 2026-27
+              Admission Directory January 2027
             </span>
             <h3 className="text-2xl sm:text-4xl font-extrabold font-heading text-white">
               Contact {institution.shortName} Admission Desk
