@@ -321,7 +321,7 @@ export default function InstitutionDetailClient({ institution }) {
       )}
 
       {/* 5. Why Choose Institution (Strengths) */}
-      {institution.whyChooseKCON && (
+      {(institution.whyChoose || institution.whyChooseKCON) && (
         <section
           id="why-choose"
           className="py-20 bg-slate-50 border-y border-slate-200/60"
@@ -329,28 +329,30 @@ export default function InstitutionDetailClient({ institution }) {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             <SectionHeader
               badge={`Why Choose ${institution.shortName}`}
-              title="14 Core Strengths & Campus"
+              title={`${(institution.whyChoose || institution.whyChooseKCON).length} Core Strengths & Campus`}
               highlightTitle="Advantages"
               description={`Key campus features, security standards, and academic infrastructure at ${institution.name}.`}
             />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {institution.whyChooseKCON.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="p-6 rounded-2xl bg-white border border-slate-200 shadow-md space-y-2 hover:shadow-lg transition-shadow"
-                >
-                  <div className="flex items-center gap-2.5 text-[#0A192F]">
-                    <CheckCircle2 className="w-5 h-5 text-accent-gold shrink-0" />
-                    <h4 className="font-bold text-sm sm:text-base text-[#0A192F]">
-                      {item.title}
-                    </h4>
+              {(institution.whyChoose || institution.whyChooseKCON).map(
+                (item, idx) => (
+                  <div
+                    key={idx}
+                    className="p-6 rounded-2xl bg-white border border-slate-200 shadow-md space-y-2 hover:shadow-lg transition-shadow"
+                  >
+                    <div className="flex items-center gap-2.5 text-[#0A192F]">
+                      <CheckCircle2 className="w-5 h-5 text-accent-gold shrink-0" />
+                      <h4 className="font-bold text-sm sm:text-base text-[#0A192F]">
+                        {item.title}
+                      </h4>
+                    </div>
+                    <p className="text-xs text-slate-600 leading-relaxed pl-7">
+                      {item.description}
+                    </p>
                   </div>
-                  <p className="text-xs text-slate-600 leading-relaxed pl-7">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+                ),
+              )}
             </div>
           </div>
         </section>

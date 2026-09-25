@@ -29,6 +29,21 @@ export default function GalleryPage() {
     "/new/13.JPG",
     "/new/15.JPG",
     "/new/0M5A8536.JPG",
+    "/college/new/1.JPG",
+    "/college/new/2.JPG",
+    "/college/new/3.jpeg",
+    "/college/new/4.jpeg",
+    "/college/new/5.jpeg",
+    "/college/new/6.jpeg",
+    "/college/new/7.jpeg",
+    "/college/new/8.jpeg",
+    "/college/new/9.jpeg",
+    "/college/new/10.JPG",
+    "/college/new/11.JPG",
+    "/college/new/12.JPG",
+    "/college/new/13.JPG",
+    "/college/new/14.JPG",
+    "/college/new/15.JPG",
   ];
 
   return (

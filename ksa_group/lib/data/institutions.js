@@ -24,9 +24,9 @@ export const INSTITUTIONS = [
     about: {
       heading: "Shaping Compassionate Caregivers, One Student at a Time",
       paragraph1:
-        "Kamarajar College of Nursing is more than just a place to earn a degree—it’s a place where dreams take shape, confidence is built, and futures are transformed. Located in the peaceful town of Chidambaram, Tamil Nadu, our college is a safe and supportive home for students who are passionate about helping others through the nursing profession.",
+        "Kamarajar College of Nursing is more than just a place to earn a degree it’s a place where dreams take shape, confidence is built, and futures are transformed. Located in the peaceful town of Chidambaram, Tamil Nadu, our college is a safe and supportive home for students who are passionate about helping others through the nursing profession.",
       paragraph2:
-        "Initiated in 2021 under the KSA Educational and Charitable Trust, we offer high-quality nursing education blending academic knowledge with real-world experience and strong human values. Affiliated with The Tamil Nadu Dr. M.G.R. Medical University and approved by the Government of Tamil Nadu (G.O. Ms. No. 316), Tamil Nadu Nurses and Midwives Council (TNNMC), and the Indian Nursing Council (INC), our students receive personal attention in a disciplined, respectful environment. We focus on empowering rural and underprivileged women through education—giving them tools to build brighter futures for themselves and their communities.",
+        "Initiated in 2021 under the KSA Educational and Charitable Trust, we offer high-quality nursing education blending academic knowledge with real-world experience and strong human values. Affiliated with The Tamil Nadu Dr. M.G.R. Medical University and approved by the Government of Tamil Nadu (G.O. Ms. No. 316), Tamil Nadu Nurses and Midwives Council (TNNMC), and the Indian Nursing Council (INC), our students receive personal attention in a disciplined, respectful environment. We focus on empowering rural and underprivileged women through education giving them tools to build brighter futures for themselves and their communities.",
       keyBadges: [
         "Govt. of Tamil Nadu Approved",
         "INC & TNNMC Registered",
@@ -150,6 +150,11 @@ export const INSTITUTIONS = [
         description:
           "Diverse extra-curricular opportunities for holistic development.",
       },
+      {
+        title: "Smart Class Enabled",
+        description:
+          "Modern classrooms equipped with advanced technology and teaching tools for an optimized learning experience.",
+      },
     ],
     committees: [
       "Admission Oversight Committee",
@@ -225,7 +230,7 @@ export const INSTITUTIONS = [
       qualification: "M.Sc Nursing, Ph.D in Nursing",
       experience: "24+ Years in Clinical & Academic Leadership",
       message:
-        "Welcome to Kamarajar College of Nursing, a center of excellence where academic brilliance and compassionate care converge. Our mission is to shape future healthcare leaders by combining rigorous clinical training with deep empathy and ethical integrity.\n\nThrough state-of-the-art skill laboratories, innovative teaching methodologies, and continuous faculty development, we empower our students to excel in a dynamic global healthcare landscape.\n\nGuided by our motto 'Arise and Shine, Radiate Brilliance,' we nurture holistic growth, leadership, and clinical excellence—preparing caregivers to inspire a healthier tomorrow.",
+        "Welcome to Kamarajar College of Nursing, a center of excellence where academic brilliance and compassionate care converge. Our mission is to shape future healthcare leaders by combining rigorous clinical training with deep empathy and ethical integrity.\n\nThrough state-of-the-art skill laboratories, innovative teaching methodologies, and continuous faculty development, we empower our students to excel in a dynamic global healthcare landscape.\n\nGuided by our motto 'Arise and Shine, Radiate Brilliance,' we nurture holistic growth, leadership, and clinical excellence preparing caregivers to inspire a healthier tomorrow.",
       avatar: "/principal/Nursing.jpeg",
     },
     facilities: [
@@ -254,6 +259,123 @@ export const INSTITUTIONS = [
           "Microbiology Diagnostic Kits",
           "Community Outreach Field Kits",
         ],
+      },
+    ],
+    facultyList: [
+      {
+        id: 1,
+        name: "Dr. S. Suganthra Devi",
+        qualification: "M.Sc(N)., Ph.D.",
+        designation: "Principal",
+      },
+      {
+        id: 2,
+        name: "Mrs. Rajaselvi G",
+        qualification: "M.Sc(N)",
+        designation: "Vice-Principal / HOD (Medical Surgical Nursing)",
+      },
+      {
+        id: 3,
+        name: "Mrs. Silambarasi T",
+        qualification: "M.Sc(N)",
+        designation:
+          "Associate Professor / HOD (Obstetrics And Gynecology Nursing)",
+      },
+      {
+        id: 4,
+        name: "Mrs. Anitha K",
+        qualification: "M.Sc(N)",
+        designation: "Associate Professor / HOD (Community Health Nursing)",
+      },
+      {
+        id: 5,
+        name: "Mrs. Buvaneswari T",
+        qualification: "M.Sc(N)",
+        designation: "Associate Professor",
+      },
+      {
+        id: 6,
+        name: "Mrs. Valarmathi N",
+        qualification: "M.Sc(N)",
+        designation: "HOD (Mental Health Nursing)",
+      },
+      {
+        id: 7,
+        name: "Mrs. Manjamatha T",
+        qualification: "M.Sc(N)",
+        designation: "HOD (Child Health Nursing)",
+      },
+      {
+        id: 8,
+        name: "Mrs. Sinduja K",
+        qualification: "M.Sc(N)",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 9,
+        name: "Mrs. Selvi M",
+        qualification: "M.Sc(N)",
+        designation: "Assistant Professor",
+      },
+      {
+        id: 10,
+        name: "Mrs. Ezhilarasi M",
+        qualification: "B.Sc(N)",
+        designation: "Nursing Tutor",
+      },
+      {
+        id: 11,
+        name: "Miss. Kaviyarasi R",
+        qualification: "P.B.B.Sc(N)",
+        designation: "Nursing Tutor",
+      },
+      {
+        id: 12,
+        name: "Mrs. Munira J",
+        qualification: "B.Sc(N)",
+        designation: "Nursing Tutor",
+      },
+      {
+        id: 13,
+        name: "Mrs. Rajalakshmi I",
+        qualification: "B.Sc(N)",
+        designation: "Nursing Tutor",
+      },
+      {
+        id: 14,
+        name: "Mrs. Ramya P",
+        qualification: "P.B.B.Sc(N)",
+        designation: "Nursing Tutor",
+      },
+      {
+        id: 15,
+        name: "Mrs. Mahalakshmi S",
+        qualification: "B.Sc(N)",
+        designation: "Nursing Tutor",
+      },
+      {
+        id: 16,
+        name: "Mrs. Indraleka S",
+        qualification: "B.Sc(N)",
+        designation: "Nursing Tutor",
+      },
+      {
+        id: 17,
+        name: "Mrs. Senbagavalli V",
+        qualification: "M.L.I.S",
+        designation: "Librarian",
+      },
+      {
+        id: 18,
+        name: "Mrs. Sivagamasundari K",
+        qualification: "D.C.S.E",
+        designation: "Office Administration",
+      },
+      {
+        id: 19,
+        name: "Mrs. Saranya P",
+        qualification: "BCA",
+        designation: "Office Administration",
       },
     ],
     contact: {
@@ -290,7 +412,7 @@ export const INSTITUTIONS = [
       heading:
         "Promoting Professional Excellence, Research & Clinical Exposure",
       paragraph1:
-        "Kamarajar College of Pharmacy, Chidambaram, functioning under the KSA Educational and Charitable Trust, is committed to promoting quality education, professional excellence, research, innovation, and community development in the field of pharmacy and healthcare. The Trust employs nearly 100 dedicated staff members and has a strong focus on promoting education in the rural sector while nurturing young talent for careers in pharmacy, pharmaceutical sciences, healthcare, research, and personalized medicine.",
+        "Kamarajar College of Pharmacy, Chidambaram, functioning under the KSA Educational and Charitable Trust, is committed to promoting quality education, professional excellence, research, innovation, and community development in the field of pharmacy and healthcare. The Trust employs nearly 100 dedicated staff members and has a strong focus on promoting education in the rural sector while nurturing young talent for careers in pharmacy, nursing, polytechnic, and marine science.",
       paragraph2:
         "The College is dedicated to the holistic development of students, giving importance to both their personal and professional growth. Through academic education, practical training, clinical exposure, research activities, outreach programmes, and industry and hospital collaborations, the institution strives to prepare students to meet the evolving needs of the healthcare sector.",
       keyBadges: [
@@ -642,6 +764,81 @@ export const INSTITUTIONS = [
         ],
       },
     ],
+    whyChoose: [
+      {
+        title: "Ragging-Free Campus",
+        description: "A harmonious and secure academic environment.",
+      },
+      {
+        title: "Safe and Secured Premises",
+        description: "A campus fortified with robust safety measures.",
+      },
+      {
+        title: "TN M.G.R. Research Awardee",
+        description:
+          "Conferred 2nd Place in Upcoming Institution Award (Research Day 2025).",
+      },
+      {
+        title: "1,260-Bed Teaching Hospital MoU",
+        description:
+          "Clinical residency at Govt Chidambaram Medical College Hospital for Pharm.D.",
+      },
+      {
+        title: "10+ Industrial MoUs",
+        description:
+          "Active industry tie-ups for practical training, R&D, and campus placements.",
+      },
+      {
+        title: "State-of-the-Art Pharma Labs",
+        description:
+          "Pharmaceutics, Pharmacology, Chemistry, Pharmacognosy, and Analysis labs.",
+      },
+      {
+        title: "E-Learning Infrastructure",
+        description: "Technology-driven, innovative learning platforms.",
+      },
+      {
+        title: "Advanced Training Programmes",
+        description:
+          "Comprehensive skill enhancement in industrial & clinical pharmacy.",
+      },
+      {
+        title: "Interstate Educational Visits",
+        description: "Enriching exposure beyond regional boundaries.",
+      },
+      {
+        title: "Outstanding Placement Records",
+        description:
+          "Impressive campus placement rate across top pharma companies & hospitals.",
+      },
+      {
+        title: "24/7 CCTV Surveillance",
+        description: "Uncompromised campus security at all hours.",
+      },
+      {
+        title: "Attendance Monitoring System",
+        description: "Precision-driven academic oversight.",
+      },
+      {
+        title: "E-Governance Parent Interaction",
+        description: "Seamless communication with guardians.",
+      },
+      {
+        title: "Student Research Initiatives",
+        description:
+          "Encouragement of academic and scientific research publication.",
+      },
+      {
+        title: "Enrichment Endeavours",
+        description:
+          "Diverse extra-curricular opportunities for holistic development.",
+      },
+      {
+        title: "Smart Class Enabled",
+        description:
+          "Modern classrooms equipped with advanced technology and teaching tools for an optimized learning experience.",
+      },
+    ],
     contact: {
       phone: "+91-9486419779 (Principal) , +91-9894064101 (CEO)",
       email: "ksaednltrust.pharma@gmail.com",
@@ -665,7 +862,7 @@ export const INSTITUTIONS = [
       "AICTE Approved | 100% MNC Placement Support with Free Higher Education Sponsorship",
     description:
       "Kamarajar Polytechnic College (KPC), established in 2015 in Keerapalayam, Chidambaram, delivers industry-aligned diploma engineering programs. KPC features advanced engineering laboratories, high-speed computer & internet centers, green campus environment with sports grounds, and dedicated hostel & canteen facilities. With an annual fee of ₹40,000 and generous scholarships up to ₹37,500 per year, KPC prepares diploma engineers for top MNC placements offering attractive salaries and sponsored higher education.",
-    heroImage: "/college/collegeabout.png",
+    heroImage: "/new/19.jpeg",
     campusImage: "/college/7.jpeg",
     stats: [
       { label: "Annual Course Fee", value: "₹40,000" },
@@ -845,7 +1042,7 @@ export const INSTITUTIONS = [
         id: "mech-cnc",
         title: "Mechanical Lathe & CNC Machine Workshop",
         category: "Manufacturing Lab",
-        image: "/college/collegeabout.png",
+        image: "/new/17.jpeg",
         description:
           "Heavy lathe machines, shaping machines, milling cutters, and CNC simulators where students learn precision machining and component fabrication.",
         specs: [
@@ -855,17 +1052,93 @@ export const INSTITUTIONS = [
         ],
       },
       {
-        id: "auto-ev",
-        title: "Automotive Engine & EV Diagnostic Lab",
-        category: "Automotive Lab",
-        image: "/faclities/6.JPG",
+        id: "polytechnic-practical-lab",
+        title: "Polytechnic Practical Lab",
+        category: "Practical Lab",
+        image: "/new/16.jpeg",
         description:
-          "Cut-section engine models, wheel alignment rigs, automotive scanner tools, and Electric Vehicle (EV) battery testing infrastructure.",
+          "State-of-the-art practical engineering laboratories equipped with modern machinery, testing rigs, and hands-on practical learning setups for diploma students.",
         specs: [
-          "Multi-Cylinder IC Engine Test Rigs",
-          "EV Motor & Battery Diagnostics",
-          "Automotive Scan Tool Systems",
+          "Practical Engineering Workbenches",
+          "Electrical & Machinery Test Bays",
+          "Hands-on Diagnostic Setup",
         ],
+      },
+    ],
+    whyChoose: [
+      {
+        title: "Ragging-Free Campus",
+        description: "A harmonious and secure academic environment.",
+      },
+      {
+        title: "Safe and Secured Premises",
+        description: "A campus fortified with robust safety measures.",
+      },
+      {
+        title: "Generous Scholarship Scheme",
+        description:
+          "₹37,500 annual scholarship reducing net tuition fee to just ₹2,500/year.",
+      },
+      {
+        title: "100% Placement Support",
+        description:
+          "Direct campus recruitment in top MNCs with attractive salary packages.",
+      },
+      {
+        title: "Free Higher Education Sponsorship",
+        description:
+          "Sponsorship opportunities for B.E. / B.Tech lateral entry.",
+      },
+      {
+        title: "Advanced Engineering Workshops",
+        description:
+          "Modern EEE, Mechanical, and Automobile practical laboratories.",
+      },
+      {
+        title: "Computer & Internet Center",
+        description:
+          "High-speed computer laboratories with campus-wide internet infrastructure.",
+      },
+      {
+        title: "AICTE & DoTE Approved",
+        description:
+          "Statutory recognition ensuring high academic and practical engineering standards.",
+      },
+      {
+        title: "E-Learning Infrastructure",
+        description: "Technology-driven, innovative learning platforms.",
+      },
+      {
+        title: "Industrial & Plant Visits",
+        description:
+          "Regular factory and industrial plant exposure beyond regional boundaries.",
+      },
+      {
+        title: "Green Campus & Sports Grounds",
+        description:
+          "Vibrant sports grounds, eco-friendly campus, safe hostel & canteen facilities.",
+      },
+      {
+        title: "24/7 CCTV Surveillance",
+        description: "Uncompromised campus security at all hours.",
+      },
+      {
+        title: "Attendance Monitoring System",
+        description: "Precision-driven academic oversight.",
+      },
+      {
+        title: "E-Governance Parent Interaction",
+        description: "Seamless communication with guardians.",
+      },
+      {
+        title: "Enrichment Endeavours",
+        description:
+          "Diverse extra-curricular opportunities for holistic development.",
+      },
+      {
+        title: "Smart Class Enabled",
+        description:
+          "Modern classrooms equipped with advanced technology and teaching tools for an optimized learning experience.",
       },
     ],
     contact: {
@@ -1014,6 +1287,81 @@ export const INSTITUTIONS = [
           "Pneumatic & Hydraulic Test Benches",
           "Marine Safety & Firefighting Bay",
         ],
+      },
+    ],
+    whyChoose: [
+      {
+        title: "Ragging-Free Campus",
+        description: "A harmonious and secure academic environment.",
+      },
+      {
+        title: "Safe and Secured Premises",
+        description: "A campus fortified with robust safety measures.",
+      },
+      {
+        title: "DGS Approved & A2 Outstanding Rating",
+        description:
+          "Recognized by Directorate General of Shipping for premier maritime training.",
+      },
+      {
+        title: "Heavy Marine Engine Workshops",
+        description:
+          "In-house marine engine components, lathe turning machines & welding bays.",
+      },
+      {
+        title: "STCW Mandatory Safety Center",
+        description:
+          "Full STCW 2010 safety, fire-fighting, and sea survival training facilities.",
+      },
+      {
+        title: "96% Global Fleet Placement",
+        description:
+          "Impressive placement record across international merchant shipping fleets.",
+      },
+      {
+        title: "Residential Naval Cadet Lifestyle",
+        description:
+          "Disciplined seamanship training with officers' mess and drill grounds.",
+      },
+      {
+        title: "Swimming Pool for Survival Practical",
+        description:
+          "On-campus swimming pool dedicated to STCW sea survival drills.",
+      },
+      {
+        title: "E-Learning Infrastructure",
+        description: "Technology-driven, innovative learning platforms.",
+      },
+      {
+        title: "Advanced Training Programmes",
+        description:
+          "Comprehensive practical seamanship and marine engineering initiatives.",
+      },
+      {
+        title: "Interstate Educational Visits",
+        description: "Enriching port, ship dock, and maritime exposure.",
+      },
+      {
+        title: "24/7 CCTV Surveillance",
+        description: "Uncompromised campus security at all hours.",
+      },
+      {
+        title: "Attendance Monitoring System",
+        description: "Precision-driven academic oversight.",
+      },
+      {
+        title: "E-Governance Parent Interaction",
+        description: "Seamless communication with guardians.",
+      },
+      {
+        title: "Enrichment Endeavours",
+        description:
+          "Diverse extra-curricular opportunities and sports for cadet development.",
+      },
+      {
+        title: "Smart Class Enabled",
+        description:
+          "Modern classrooms equipped with advanced technology and teaching tools for an optimized learning experience.",
       },
     ],
     contact: {

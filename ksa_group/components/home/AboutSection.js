@@ -20,27 +20,6 @@ export default function AboutSection() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-[#0A192F]/60 to-transparent" />
             </div>
-
-            {/* Overlapping Floating Badge */}
-            {/* <div className="absolute -bottom-6 -right-4 sm:bottom-8 sm:-right-6 bg-[#0A192F] text-white p-6 rounded-3xl shadow-2xl border border-[#D4AF37]/30 max-w-xs">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="p-2 rounded-xl bg-[#D4AF37]/20 text-[#D4AF37]">
-                  <Award className="w-6 h-6" />
-                </div>
-                <div>
-                  <span className="text-2xl font-extrabold text-white font-heading">
-                    20+ Years
-                  </span>
-                  <span className="text-xs text-slate-400 block">
-                    Academic Excellence
-                  </span>
-                </div>
-              </div>
-              <p className="text-xs text-slate-300">
-                Governing constituent institutions with statutory approvals
-                across Healthcare, Pharma & Marine studies.
-              </p>
-            </div> */}
           </div>
 
           {/* Right Column: About Content */}
@@ -57,8 +36,8 @@ export default function AboutSection() {
               <p>
                 The Trust employs nearly 100 dedicated staff members and has a
                 strong focus on promoting education in the rural sector while
-                nurturing young talent for careers in pharmacy, pharmaceutical
-                sciences, healthcare, research, and personalized medicine.
+                nurturing young talent for careers in pharmacy, nursing,
+                polytechnic, and marine science.
               </p>
             </div>
 

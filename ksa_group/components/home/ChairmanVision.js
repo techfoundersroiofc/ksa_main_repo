@@ -48,8 +48,8 @@ export default function ChairmanVision() {
 
             <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
               <p>
-                Following the visionary ideals of Perunthalaivar Kamarajar—who
-                opened the doors of education for all—the KSA Group of
+                Following the visionary ideals of Perunthalaivar Kamarajar who
+                opened the doors of education for all the KSA Group of
                 Institutions was established with a singular mission: to make
                 world-class professional training accessible without
                 compromising on moral principles and social responsibility.
@@ -57,7 +57,7 @@ export default function ChairmanVision() {
               <p>
                 Whether it is a dedicated nurse managing critical care, a
                 skilled pharmacist developing life-saving solutions, or a
-                nautical cadet navigating ocean vessels across the globe—KSA
+                nautical cadet navigating ocean vessels across the globe KSA
                 graduates embody the spirit of discipline, excellence, and
                 selfless service to the nation.
               </p>
