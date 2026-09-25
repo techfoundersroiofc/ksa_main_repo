@@ -51,7 +51,7 @@ export default function AboutPage() {
     {
       year: "2021",
       title: "Bachelor of Science in Nursing (B.Sc Nursing)",
-      desc: "Approved by Tamil Nadu Nurses & Midwives Council (TNNMC) and Indian Nursing Council (INC), New Delhi.",
+      desc: "Approved by Tamil Nadu Govt",
     },
   ];
 
@@ -71,8 +71,8 @@ export default function AboutPage() {
           </h1>
           <p className="text-slate-300 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed">
             Governing premier constituent colleges in Nursing (Chidambaram),
-            Pharmacy (Chidambaram), Polytechnic Engineering, and Maritime Studies
-            with statutory approvals, clinical hospital MoUs, and career
+            Pharmacy (Chidambaram), Polytechnic Engineering, and Maritime
+            Studies with statutory approvals, clinical hospital MoUs, and career
             pathways.
           </p>
         </div>

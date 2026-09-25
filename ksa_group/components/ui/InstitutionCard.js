@@ -77,7 +77,7 @@ export default function InstitutionCard({ institution, onOpenApplyModal }) {
             Offering {institution.programs.length} Specialized Programs
           </span>
           <span className="font-semibold text-black uppercase tracking-wider text-[9px] bg-slate-100 px-2 py-0.5 rounded-md">
-            UG • PG • Certificate
+            UG Certificate
           </span>
         </div>
 

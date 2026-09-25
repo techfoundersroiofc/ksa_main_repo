@@ -109,16 +109,16 @@ export default function InstitutionsPage() {
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Kamarajar Group of Institutions continues to focus on creating a
                 learning environment that combines quality education, practical
-                training, clinical exposure, research, community engagement,
-                and professional collaboration.
+                training, clinical exposure, research, community engagement, and
+                professional collaboration.
               </p>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed bg-slate-50 p-5 rounded-2xl border border-slate-200/80 italic">
                 &ldquo;By nurturing students across diploma, undergraduate,
                 doctoral, and postgraduate programmes, the institution aims to
-                develop competent and responsible pharmacy, nursing, engineering,
-                and maritime professionals who can contribute meaningfully to
-                healthcare, pharmaceutical industries, research, and
-                society.&rdquo;
+                develop competent and responsible pharmacy, nursing,
+                engineering, and maritime professionals who can contribute
+                meaningfully to healthcare, pharmaceutical industries, research,
+                and society.&rdquo;
               </p>
             </div>
 
@@ -196,9 +196,9 @@ export default function InstitutionsPage() {
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 To emerge as a distinguished epicenter of educational excellence
-                across Healthcare, Pharmacy, Engineering, and Nautical
-                Sciences—dedicating ourselves to sculpting ethical,
-                compassionate, and globally competitive professionals.
+                across Healthcare, Pharmacy, Engineering, and Nautical Sciences
+                dedicating ourselves to sculpting ethical, compassionate, and
+                globally competitive professionals.
               </p>
             </div>
 
@@ -241,7 +241,7 @@ export default function InstitutionsPage() {
                   "px-5 py-2.5 rounded-full text-xs sm:text-sm font-extrabold transition-all cursor-pointer shadow-xs",
                   selectedCategory === cat
                     ? "bg-[#0A192F] text-accent-gold shadow-md scale-105"
-                    : "bg-white text-slate-700 hover:bg-slate-200 border border-slate-200"
+                    : "bg-white text-slate-700 hover:bg-slate-200 border border-slate-200",
                 )}
               >
                 {cat}
@@ -276,7 +276,10 @@ export default function InstitutionsPage() {
                 Global Career Scope Across Disciplines
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Graduates from Kamarajar Group of Institutions gain hands-on clinical and industrial exposure that translates directly into immediate placement in leading hospitals, pharmaceutical firms, engineering MNCs, and international shipping lines.
+                Graduates from Kamarajar Group of Institutions gain hands-on
+                clinical and industrial exposure that translates directly into
+                immediate placement in leading hospitals, pharmaceutical firms,
+                engineering MNCs, and international shipping lines.
               </p>
             </div>
 
@@ -348,7 +351,8 @@ export default function InstitutionsPage() {
                     Competitive Starting Salary:
                   </span>
                   <span className="text-lg font-extrabold text-accent-gold">
-                    ₹3.5 LPA - ₹9.0 LPA (Domestic) | $800 - $3,500/Mo (Seafaring)
+                    ₹3.5 LPA - ₹9.0 LPA (Domestic) | $800 - $3,500/Mo
+                    (Seafaring)
                   </span>
                 </div>
               </div>
@@ -403,13 +407,11 @@ export default function InstitutionsPage() {
                   2
                 </div>
                 <h4 className="font-bold text-white text-sm sm:text-base">
-                  Minimum Aggregate Marks
+                  Qualifying Science Stream
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Candidate must secure a minimum aggregate of{" "}
-                  <strong className="text-accent-gold">50% marks</strong> in
-                  Physics, Chemistry, and Mathematics (PCM) or Physics,
-                  Chemistry, and Biology (PCB).
+                  Candidate must have passed in Physics, Chemistry, and
+                  Mathematics (PCM) or Physics, Chemistry, and Biology (PCB).
                 </p>
               </div>
 
@@ -432,7 +434,10 @@ export default function InstitutionsPage() {
         </section>
 
         {/* 6. CALL TO ACTION (CTA) SECTION */}
-        <section id="cta" className="p-8 sm:p-12 rounded-3xl bg-linear-to-r from-[#0A192F] via-[#162C4E] to-[#0A192F] text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl border border-slate-800">
+        <section
+          id="cta"
+          className="p-8 sm:p-12 rounded-3xl bg-linear-to-r from-[#0A192F] via-[#162C4E] to-[#0A192F] text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl border border-slate-800"
+        >
           <div className="space-y-2 max-w-xl">
             <span className="text-xs font-extrabold text-accent-gold uppercase tracking-widest block">
               Admission Session 2026-27

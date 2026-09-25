@@ -161,13 +161,16 @@ export default function ContactPage() {
               </p>
               <div className="space-y-2 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4 text-accent-gold" /> +91 94876 08775 (CEO)
+                  <Phone className="w-4 h-4 text-accent-gold" /> +91 94881 78596 (Nursing Principal)
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4 text-accent-gold" /> +91 94864 19779 (Principal)
+                  <Phone className="w-4 h-4 text-accent-gold" /> +91 94864 19779 (Pharmacy Principal)
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4 text-accent-gold" /> +91 87782 74072 (Admission Committee)
+                  <Phone className="w-4 h-4 text-accent-gold" /> +91 98940 64101 / +91 94876 08775 (CEO)
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-accent-gold" /> +91 87782 74072 (Admission Desk)
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-accent-gold" /> admissions@ksagroup.edu.in

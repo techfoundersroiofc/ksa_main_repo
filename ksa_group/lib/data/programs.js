@@ -11,11 +11,11 @@ export const ALL_PROGRAMS = [
     seats: 100,
     rating: "4.9/5",
     eligibility:
-      "10+2 Science stream with Physics, Chemistry, Biology & English (Min 50%)",
+      "10+2 Science stream with Physics, Chemistry, Biology & English + Medical Fitness & Entrance Score",
     highlights: [
       "INC & TNNMC Approved Syllabus",
-      "Digital learning tools & skill labs",
-      "Empowering rural & underprivileged women",
+      "Tie-ups with Govt Cuddalore Medical College Hospital, Urban Health Centre & PHC Orathur",
+      "Govt & SNA Merit Scholarships (ADWD, First Graduation, BC/MBC, Pudhumai Penn)",
     ],
     overview:
       "Established in 2021 in Chidambaram under KSA Educational and Charitable Trust. Blends academic theory with hands-on clinical training, high-fidelity skill labs, and compassionate bedside care.",
@@ -74,7 +74,7 @@ export const ALL_PROGRAMS = [
     seats: 30,
     rating: "5.0/5",
     eligibility:
-      "10+2 Science (Physics, Chemistry, Biology/Maths - Min 50%) or D.Pharm. Age 17+ years",
+      "10+2 Science (Physics, Chemistry, Biology/Maths) or D.Pharm. Age 17+ years",
     highlights: [
       "Started in 2025 with 30 seats",
       "MoU with Govt Cuddalore Medical College Hospital (1,260 beds)",

@@ -27,7 +27,7 @@ export default function ChairmanVision() {
                   Thiru K. S. Alagiri
                 </h4>
                 <p className="text-xs text-accent-gold font-semibold">
-                  Ex-MP | Founder & Chairman, KSA Group of Institutions
+                  [Ex-MP, Founder & Chairman, KSA Group of Institutions]
                 </p>
               </div>
             </div>

@@ -144,7 +144,7 @@ export default function Footer({ onOpenApplyModal }) {
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1.5 rounded-xl bg-slate-900/40 backdrop-blur-md border border-white/5 hover:border-accent-gold/40 text-[11px] text-slate-300 font-semibold flex items-center gap-1.5 shadow-md hover:shadow-accent-gold/5 hover:bg-slate-900/80 transition-all duration-300">
                   <ShieldCheck className="w-3.5 h-3.5 text-accent-gold drop-shadow-[0_0_4px_rgba(229,193,88,0.4)]" />{" "}
-                  INC & TNNC
+                  TNNMC
                 </span>
                 <span className="px-3 py-1.5 rounded-xl bg-slate-900/40 backdrop-blur-md border border-white/5 hover:border-accent-gold/40 text-[11px] text-slate-300 font-semibold flex items-center gap-1.5 shadow-md hover:shadow-accent-gold/5 hover:bg-slate-900/80 transition-all duration-300">
                   <Award className="w-3.5 h-3.5 text-accent-gold drop-shadow-[0_0_4px_rgba(229,193,88,0.4)]" />{" "}
@@ -253,7 +253,7 @@ export default function Footer({ onOpenApplyModal }) {
                 <li className="flex items-start gap-2.5">
                   <MapPin className="w-4 h-4 text-accent-gold shrink-0 mt-0.5 drop-shadow-[0_0_3px_rgba(229,193,88,0.25)]" />
                   <span className="leading-relaxed hover:text-slate-300 transition-colors duration-300">
-                    Ksa Educational And Charitable Trust, 1069, Thirupaninatham,
+                    KSA Educational And Charitable Trust, 1069, Thirupaninatham,
                     Keerapalayam, Chidambaram Taluk, Cuddalore Dt-608602
                   </span>
                 </li>
@@ -272,7 +272,7 @@ export default function Footer({ onOpenApplyModal }) {
                     href="mailto:admissions@ksagroup.edu.in"
                     className="hover:text-white transition-colors duration-300"
                   >
-                    Ksaednltrust@gmail.com
+                    ksaednltrust@gmail.com
                   </a>
                 </li>
               </ul>

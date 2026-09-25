@@ -3,7 +3,7 @@ export const INSTITUTIONS = [
     id: "nursing",
     slug: "kamarajar-college-of-nursing",
     name: "KAMARAJAR COLLEGE OF NURSING",
-    shortName: "KAMARAJAR COLLEGE  OF NURSING",
+    shortName: "KCON",
     category: "Nursing",
     tagline: "Shaping Compassionate Caregivers, One Student at a Time",
     established: 2021,
@@ -18,7 +18,10 @@ export const INSTITUTIONS = [
     stats: [
       { label: "Established Under Trust", value: "2021" },
       { label: "Statutory Approvals", value: "INC & TNNMC" },
-      { label: "University Affiliation", value: "TN M.G.R." },
+      {
+        label: "Govt of TN in approved",
+        value: "TN Dr.M.G.R Medical University ",
+      },
       { label: "Placement Record", value: "100%" },
     ],
     about: {
@@ -35,8 +38,10 @@ export const INSTITUTIONS = [
       ],
     },
     highlights: [
-      "Affiliated with Tamil Nadu Dr. M.G.R. Medical University & Approved by INC, TNNMC & Govt. of TN",
+      "Affiliated with Tamil Nadu Dr. M.G.R. Medical University & Approved by Govt of TN, TNNMC and INC",
+      "Clinical Tie-ups with Government Cuddalore Medical College Hospital, Urban Health Centre (Chidambaram) & PHC (Orathur)",
       "Empowering Rural & Underprivileged Women Through Transformative Nursing Education",
+      "Government & Merit Scholarships Available (ADWD SC/ST, First Graduation, BC/MBC, Pudhumai Penn & SNA Scholarships)",
       "Ragging-Free, Safe & Secure Campus with 24/7 CCTV Surveillance & Attendance Monitoring",
       "State-of-the-Art Skill Labs, E-Learning Infrastructure & Medlar/Medline Research Access",
     ],
@@ -127,7 +132,12 @@ export const INSTITUTIONS = [
       {
         title: "Clinical Excellence",
         description:
-          "Collaborative practice with premier government organizations.",
+          "Clinical tie-ups with Government Cuddalore Medical College Hospital, Urban Health Centre (Chidambaram), and Primary Health Centre (Orathur).",
+      },
+      {
+        title: "Scholarship Guidance",
+        description:
+          "Full assistance for ADWD (SC/ST), First Graduation, BC & MBC, Pudhumai Penn (PPS), and SNA Scholarships for deserving students.",
       },
       {
         title: "24/7 CCTV Surveillance",
@@ -184,14 +194,17 @@ export const INSTITUTIONS = [
         name: "B.Sc Nursing",
         level: "Undergraduate",
         duration: "4 Years",
-        eligibility: "HSC / 10+2 with Physics, Chemistry, Biology & English",
+        eligibility:
+          "HSC / 10+2 with Physics, Chemistry, Biology & English + Medical Fitness & Entrance Score",
         intake: 60,
         description:
           "A foundational healthcare degree producing skilled, empathetic, and professional nurses for clinical settings, hospitals, and community care globally.",
         highlights: [
           "INC & TNNMC Approved Syllabus",
+          "Clinical tie-ups with Govt Cuddalore Medical College Hospital, Urban Health Centre & PHC Orathur",
+          "Scholarships available (ADWD SC/ST, First Graduation, BC/MBC, Pudhumai Penn, SNA)",
           "Digital learning tools & skill labs",
-          "Direct hospital clinical rotations",
+          "Assured Placements",
         ],
       },
     ],
@@ -251,13 +264,17 @@ export const INSTITUTIONS = [
         id: "nursing-labs",
         title: "Anatomy, Physiology & Community Skill Labs",
         category: "Academic Labs",
-        image: "/college/0M5A8628.JPG",
+        image: "/college/new/17.JPG",
         description:
           "Comprehensive anatomical models, histological specimens, and community health kits ensuring thorough grounding in fundamental medical sciences.",
         specs: [
-          "Interactive Human Body Models",
-          "Microbiology Diagnostic Kits",
-          "Community Outreach Field Kits",
+          "Therapeutie Dietics laboratory",
+          "Maternal & Midwifery simulaton suite",
+          "Child Health Nursing simulation pavilion",
+          "Digital Health information labarotary",
+          "Fundamentals of Nursing simulation suite",
+          "Public Health Nursing simulation",
+          "Knowledge resoure center(KRC)",
         ],
       },
     ],
@@ -472,7 +489,7 @@ export const INSTITUTIONS = [
         level: "Doctoral / Professional",
         duration: "6 Years (5 Yrs Academic + 1 Yr Hospital Internship)",
         eligibility:
-          "1. Passed 10+2 with English and Physics, Chemistry, Mathematics (PCM) and/or Biology (PCB/PCMB) individually. 2. Minimum 50% aggregate in PCM/PCB. 3. Age: Completion of 17 years on or before 31st December of admission year.",
+          "1. Passed 10+2 with English and Physics, Chemistry, Mathematics (PCM) and/or Biology (PCB/PCMB) individually. 2. Age: Completion of 17 years on or before 31st December of admission year.",
         intake: 30,
         description:
           "Introduced in 2025 with 30 approved seats. Clinical doctorate integrating hospital pharmacy, clinical toxicology, pharmacotherapeutics, and 1-year hands-on internship at Government Chidambaram Medical College Hospital (1,260 beds).",
