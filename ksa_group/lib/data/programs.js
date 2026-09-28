@@ -11,7 +11,7 @@ export const ALL_PROGRAMS = [
     seats: 100,
     rating: "4.9/5",
     eligibility:
-      "10+2 Science stream with Physics, Chemistry, Biology & English + Medical Fitness & Entrance Score",
+      "10+2 Science stream with Physics, Chemistry, Biology & English + Medical Fitness & Entrance Score, Medical fitness and entrance score is also applicable for Nursing",
     highlights: [
       "INC & TNNMC Approved Syllabus",
       "Tie-ups with Govt Cuddalore Medical College Hospital, Urban Health Centre & PHC Orathur",
