@@ -858,6 +858,23 @@ export default function InstitutionDetailClient({ institution }) {
             >
               Apply Online <ArrowRight className="w-4 h-4" />
             </button>
+            <button
+              onClick={() => {
+                const currentPath = window.location.pathname;
+
+                if (currentPath.includes("/institutions/nursing")) {
+                  window.open("https://k-con.in", "_blank");
+                } else if (currentPath.includes("/institutions/maritime")) {
+                  window.open("https://www.pkimse.com", "_blank");
+                } else {
+                  // Stays on the same page (or uncomment setModalOpen(true) if needed)
+                  console.log("Condition not met, staying on the same page");
+                }
+              }}
+              className="px-6 py-3.5 rounded-2xl bg-linear-to-r from-accent-gold to-[#B8902A] text-[#0A192F] text-xs sm:text-sm font-extrabold shadow-lg hover:brightness-110 transition-all cursor-pointer flex items-center justify-center gap-2"
+            >
+              Apply Directly <ArrowRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
       </section>
