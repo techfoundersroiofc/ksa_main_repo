@@ -417,8 +417,8 @@ export const INSTITUTIONS = [
     accreditation:
       "2nd Place Awardee in Upcoming Institution Award (TN M.G.R. University Research Day 2025) | 10 Industry & Hospital MoUs",
     description:
-      "Kamarajar College of Pharmacy, Chidambaram offers D.Pharm, B.Pharm, Pharm.D, and M.Pharm programmes in Pharmaceutics and Pharmaceutical Chemistry, covering pharmaceutical sciences, drug formulation, pharmacology, and clinical pharmacy. The programmes combine theoretical learning, practical laboratory training, research opportunities, and clinical exposure, with Pharm.D students receiving hands-on training at Government Cuddalore Medical College Hospital, a 1,260-bedded tertiary care hospital. Students develop the knowledge and skills required for careers in pharmaceutical industries, hospitals, clinical practice, drug research, healthcare, and academia.",
-    heroImage: "/college/Our-Nursing-Students-768x466.webp",
+      "Kamarajar College of Pharmacy, Chidambaram offers D.Pharm, B.Pharm, Pharm.D, and M.Pharm programmes in Pharmaceutics and Pharmaceutical Chemistry, covering pharmaceutical sciences, drug formulation, pharmacology, and clinical pharmacy. The programmes combine theoretical learning, practical laboratory training, research opportunities, and clinical exposure, with Pharm.D",
+    heroImage: "/college/3X5A8135.JPG.jpeg",
     campusImage: "/college/DJI_0542.webp",
     stats: [
       { label: "Dedicated Staff", value: "100+" },
@@ -753,7 +753,7 @@ export const INSTITUTIONS = [
         id: "pharma-inst",
         title: "Central Instrumentation & Analysis Laboratory",
         category: "Research Facility",
-        image: "/college/Our-Nursing-Students-768x466.webp",
+        image: "/college/MICRO.jpeg",
         description:
           "Equipped with High-Performance Liquid Chromatography (HPLC), Fourier Transform Infrared Spectroscopy (FTIR), UV-Vis Spectrophotometer, and Rotary Evaporators for analytical research.",
         specs: [
@@ -873,7 +873,7 @@ export const INSTITUTIONS = [
     accreditation:
       "AICTE Approved | 100% MNC Placement Support with Free Higher Education Sponsorship",
     description:
-      "Kamarajar Polytechnic College (KPC), established in 2015 in Keerapalayam, Chidambaram, delivers industry-aligned diploma engineering programs. KPC features advanced engineering laboratories, high-speed computer & internet centers, green campus environment with sports grounds, and dedicated hostel & canteen facilities. With an annual fee of ₹40,000 and generous scholarships up to ₹37,500 per year, KPC prepares diploma engineers for top MNC placements offering attractive salaries and sponsored higher education.",
+      "Kamarajar Polytechnic College (KPC), established in 2015 in Keerapalayam, Chidambaram, delivers industry-aligned diploma engineering programs. KPC features advanced engineering laboratories, high-speed computer & internet centers, green campus environment with sports grounds, and dedicated hostel & canteen facilities. With an annual fee of ₹40,000 and generous scholarships",
     heroImage: "/new/19.jpeg",
     campusImage: "/college/7.jpeg",
     stats: [

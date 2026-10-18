@@ -44,6 +44,9 @@ export default function GalleryPage() {
     "/college/new/13.JPG",
     "/college/new/14.JPG",
     "/college/new/15.JPG",
+    "/college/3X5A8041.JPG.jpeg",
+    "/college/3X5A8135.JPG.jpeg",
+    "/college/MICRO.jpeg",
   ];
 
   return (
