@@ -766,7 +766,7 @@ export const INSTITUTIONS = [
         id: "pharma-form",
         title: "Pharmaceutics & Industrial Prototype Laboratory",
         category: "Manufacturing Lab",
-        image: "/college/0M5A8628.JPG",
+        image: "/new/3X5A8041.jpeg",
         description:
           "Tablet compression machines, dissolution test apparatus, disintegration testers, and liquid filling lines simulating industrial medicine manufacturing.",
         specs: [

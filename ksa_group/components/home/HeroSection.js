@@ -44,7 +44,7 @@ export default function HeroSection({ onOpenApplyModal }) {
         highlight: "DIGITAL HEADQUARTERS",
         subtitle:
           "Governing Premier Accredited Colleges in Healthcare, Pharmacy & Maritime Nautical Sciences.",
-        bgImage: "/college/heroimage1.webp",
+        bgImage: "/college/new/25.jpeg",
         badge: "INC • PCI • AICTE • DGS A1 RATED",
         stat: "98% Global Placements",
       },
